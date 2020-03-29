@@ -9,7 +9,7 @@
 
   let theme = "dark";
   let color = "dark";
-  let title = "λproton";
+  let title = "proton";
 </script>
 
 <svelte:head>
