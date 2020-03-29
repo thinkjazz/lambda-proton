@@ -27,6 +27,7 @@
     if (isPageOpen === true) isPageOpen = false;
   };
 
+
   const toggleLayout = () => {
     isLayoutOpen = !isLayoutOpen;
     if (isPageOpen === true) isPageOpen = false;
@@ -69,17 +70,9 @@
           href=".">
           <i class="fas fa-atom" slot="leftIcon" />
         </SidebarItem>
+
         <div class="l-proton-sidenav-menu-heading">Интерфейс</div>
-        <SidebarItem
-                class={segment === 'ui' ? 'active' : ''}
-                on:press={() => {
-                theme = 'dark';
-                }}
-                href="ui"
-                text="UI"
-                leftIcon>
-          <i class="fas fa-table" slot="leftIcon" />
-        </SidebarItem>
+
 
         <SidebarItem
           on:press={toggleLayout}
@@ -202,7 +195,18 @@
           <i class="fas fa-table" slot="leftIcon" />
         </SidebarItem>
 
+        <SidebarItem
+                on:press={toggleUi}
+                class={!isUiOpen ? 'collapsed' : ''}
+                text="UI"
+                leftIcon
+                rightIcon>
+
+          <i class="fas fa-grip-horizontal" slot="leftIcon" />
+          <i class="fas fa-angle-down" slot="rightIcon" />
+        </SidebarItem>
       </Nav>
+
     </div>
     <div class="l-proton-sidenav-footer">
       <div class="small">{footerText}</div>
