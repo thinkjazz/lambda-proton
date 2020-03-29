@@ -14,12 +14,12 @@
 <div class="col-lg-5">
   <Card class="shadow-lg border-0 rounded-lg mt-5">
     <CardHeader>
-      <h3 class="text-center font-weight-light my-4">Password Recovery</h3>
+      <h3 class="text-center font-weight-light my-4">Восстановление пароля</h3>
     </CardHeader>
     <CardBody>
       <div class="small mb-3 text-muted">
-        Enter your email address and we will send you a link to reset your
-        password.
+        Введите ваш адрес электронной почты, и мы вышлем вам ссылку для перезагрузки вашего
+        пароль.
       </div>
       <Form>
         <FormGroup>
@@ -29,19 +29,19 @@
             type="email"
             name="inputEmailAddress"
             id="inputEmailAddress"
-            placeholder="Enter email address" />
+            placeholder="Введите почту" />
         </FormGroup>
         <FormGroup
           class="d-flex align-items-center justify-content-between mt-4 mb-0">
-          <a class="small" href="pages/authentication/login">Return to login</a>
+          <a class="small" href="pages/authentication/login">Вернуться к входу в систему</a>
           <Button color="primary" href="pages/authentication/login">
-            Reset Password
+            Сброс пароля
           </Button>
         </FormGroup>
       </Form>
     </CardBody>
     <CardFooter class="text-center small">
-      <a href="pages/authentication/register">Need an account? Sign up!</a>
+      <a href="pages/authentication/register">Нужен аккаунт? Зарегистрируйтесь!</a>
     </CardFooter>
   </Card>
 </div>

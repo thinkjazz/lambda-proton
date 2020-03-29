@@ -9,12 +9,13 @@
   import Input from "sveltestrap/src/Input.svelte";
   import CustomInput from "sveltestrap/src/CustomInput.svelte";
   import Button from "sveltestrap/src/Button.svelte";
+  import Image from "../../../components/Image.svelte";
 </script>
 
 <div class="col-lg-5">
   <Card class="shadow-lg border-0 rounded-lg mt-5">
     <CardHeader>
-      <h3 class="text-center font-weight-light my-4">Login</h3>
+      <h3 class="text-center font-weight-light my-4">Логин</h3>
     </CardHeader>
     <CardBody>
       <Form>
@@ -25,34 +26,34 @@
             type="email"
             name="email"
             id="exampleEmail"
-            placeholder="Enter email address" />
+            placeholder="Введите адрес электронной почты" />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword" class="small mb-1">Password</Label>
+          <Label for="examplePassword" class="small mb-1">Пароль</Label>
           <Input
             class="py-4"
             type="password"
             name="password"
             id="examplePassword"
-            placeholder="Enter password" />
+            placeholder="Введите пароль" />
         </FormGroup>
         <FormGroup>
           <CustomInput
             type="checkbox"
             id="exampleCustomCheckbox"
-            label="Remember password" />
+            label="Запомнить пароль" />
         </FormGroup>
         <FormGroup
           class="d-flex align-items-center justify-content-between mt-4 mb-0">
           <a class="small" href="pages/authentication/forget_password">
-            Forgot Password?
+            Забыли пароль?
           </a>
-          <Button color="primary" href=".">Login</Button>
+          <Button color="primary" href=".">Вход</Button>
         </FormGroup>
       </Form>
     </CardBody>
     <CardFooter class="text-center small">
-      <a href="pages/authentication/register">Need an account? Sign up!</a>
+      <a href="pages/authentication/register">Нужен аккаунт? Зарегистрируйтесь!</a>
     </CardFooter>
   </Card>
 </div>

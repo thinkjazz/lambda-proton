@@ -15,31 +15,31 @@
 <Col class="col-lg-7">
   <Card class="shadow-lg border-0 rounded-lg mt-5">
     <CardHeader>
-      <h3 class="text-center font-weight-light my-4">Create Account</h3>
+      <h3 class="text-center font-weight-light my-4">Создать аккаунт</h3>
     </CardHeader>
     <CardBody>
       <Form>
         <Row form>
           <div class="col-md-6">
             <FormGroup>
-              <Label for="inputFirstName" class="small mb-1">First Name</Label>
+              <Label for="inputFirstName" class="small mb-1">Имя</Label>
               <Input
                 class="py-4"
                 type="text"
                 name="firstName"
                 id="inputFirstName"
-                placeholder="Enter first name" />
+                placeholder="Введите имя" />
             </FormGroup>
           </div>
           <div class="col-md-6">
             <FormGroup>
-              <Label for="inputLastName" class="small mb-1">Last Name</Label>
+              <Label for="inputLastName" class="small mb-1">Фамилия</Label>
               <Input
                 class="py-4"
                 type="text"
                 name="lastName"
                 id="inputLastName"
-                placeholder="Enter last name" />
+                placeholder="Введите фамилию" />
             </FormGroup>
           </div>
         </Row>
@@ -50,43 +50,43 @@
             type="email"
             name="email"
             id="exampleEmail"
-            placeholder="Enter email address" />
+            placeholder="Введите адрес электронной почты" />
         </FormGroup>
         <Row form>
           <div class="col-md-6">
             <FormGroup>
-              <Label for="inputPassword" class="small mb-1">Password</Label>
+              <Label for="inputPassword" class="small mb-1">Пароль</Label>
               <Input
                 class="py-4"
                 type="password"
                 name="inputPassword"
                 id="inputPassword"
-                placeholder="Enter password" />
+                placeholder="Введите пароль" />
             </FormGroup>
           </div>
           <div class="col-md-6">
             <FormGroup>
               <Label for="inputConfirmPassword" class="small mb-1">
-                Confirm Password
+                Подтвердить пароль
               </Label>
               <Input
                 class="py-4"
                 type="password"
                 name="inputConfirmPassword"
                 id="inputConfirmPassword"
-                placeholder="Confirm password" />
+                placeholder="Подтвердить пароль" />
             </FormGroup>
           </div>
         </Row>
         <FormGroup class="mt-4 mb-0">
           <Button color="primary" block href="pages/authentication/login">
-            Create Account
+            Создать аккаунт
           </Button>
         </FormGroup>
       </Form>
     </CardBody>
     <CardFooter class="text-center small">
-      <a href="pages/authentication/login">Have an account? Go to login</a>
+      <a href="pages/authentication/login">У вас есть аккаунт? Перейдите на страницу входа</a>
     </CardFooter>
   </Card>
 </Col>
