@@ -14733,79 +14733,79 @@ const ignore = [/^\/blog.json$/, /^\/blog\/([^\/]+?).json$/];
 const components = [
 	{
 		js: () => import('./index.91c0b929.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:index.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./activity_log.089790ed.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:activity_log.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./settings.7d497f5e.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:settings.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./static_navigation.54f50deb.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:layouts/static_navigation.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./light_sidenav.788b1911.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:layouts/light_sidenav.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./charts.cd1a5475.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:charts.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./tables.5b461300.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:tables.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./_layout.379a52d7.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/authentication/_layout.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./forget_password.30e2fe07.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/authentication/forget_password.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./register.5e79a0cc.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/authentication/register.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./login.a0559f15.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/authentication/login.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./_layout.4bdd96f5.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/error/_layout.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./error_401.b08bb597.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/error/error_401.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./error_404.751c5480.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/error/error_404.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./error_500.34573844.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/error/error_500.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./_layout.3a6ac63d.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/ui/_layout.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./ui.0b4ce805.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:pages/ui/ui.svelte__"
+		css: ["client.e494aafb.css"]
 	},
 	{
 		js: () => import('./index.12424844.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:blog/index.svelte__"
+		css: ["index.12424844.css","client.e494aafb.css"]
 	},
 	{
 		js: () => import('./[slug].f200e472.js'),
-		css: "__SAPPER_CSS_PLACEHOLDER:blog/[slug].svelte__"
+		css: ["[slug].f200e472.css","client.e494aafb.css"]
 	}
 ];
 
