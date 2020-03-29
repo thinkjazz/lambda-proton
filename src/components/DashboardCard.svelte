@@ -10,7 +10,7 @@
 
   import Image from "../components/Image.svelte";
 
-  export let cardTitle = "";
+  export let cardTitle = "Хуйкин";
   export let cardColor;
   export let cardFooterText = "Детали";
 </script>
