@@ -3,7 +3,7 @@
 
   const dispatch = createEventDispatcher();
 
-  export let text = "";
+  export let text = "fdfd";
   export let href = "javascript:void(0)";
   export let leftIcon = false;
   export let rightIcon = false;
