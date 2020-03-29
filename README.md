@@ -1,4 +1,4 @@
-# λproton [lambda-proton] Лямбда Протон
+# λproton[lambda-proton]
 ## Панель сделана с использованием Svelte и Sapper.
 
 ![Logo](static/l-proton-logo.png)
