@@ -9,7 +9,7 @@
   import Input from "sveltestrap/src/Input.svelte";
   import CustomInput from "sveltestrap/src/CustomInput.svelte";
   import Button from "sveltestrap/src/Button.svelte";
-  import Image from "../../../components/Image.svelte";
+
 </script>
 
 <div class="col-lg-5">
