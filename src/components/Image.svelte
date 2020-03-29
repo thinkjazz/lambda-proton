@@ -1,8 +1,8 @@
 <script>
-  export let src;
-  export let alt;
+  export let src = "logo-192.png";
+  export let alt = "logo";
 
-  let className = "";
+  let className = "logo";
   export { className as class };
 </script>
 
