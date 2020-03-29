@@ -1,6 +1,6 @@
 {
-  "name": "SB_Admin_Svelte",
-  "description": "SB_Admin_Svelte",
+  "name": "lambda-proton",
+  "description": "lambda-proton",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
@@ -14,6 +14,7 @@
   "dependencies": {
     "chart.js": "^2.9.3",
     "compression": "^1.7.1",
+    "now": "^17.1.1",
     "polka": "next",
     "sirv": "^0.4.0",
     "sveltestrap": "^3.3.2"
