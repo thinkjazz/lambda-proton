@@ -1,23 +1,31 @@
 <script>
+  //Импортируем компонты из bootstrap sveltestrap
   import Collapse from "sveltestrap/src/Collapse.svelte";
   import Nav from "sveltestrap/src/Nav.svelte";
-
+  //Импортируем SidebarItem
   import SidebarItem from "./SidebarItem.svelte";
-
+  //segment есть переменная для хранения состояния элеменат меню и проверка для подрузки в сайдбар
   export let segment;
+  //theme переменная для хранения состояния темы
   export let theme;
 
   $: sidenav_theme = `l-proton-sidenav-${theme}`;
 
-  let isLayoutOpen = true;
-  let isPageOpen = true;
-  let isAuthenticationOpen = true;
+  let isLayoutOpen = false;
+  let isPageOpen = false;
+  let isAuthenticationOpen = false;
   let isErrorOpen = false;
+  let isUiOpen = false;
   let activeLink = "Панель";
   let footerName = "λproton boy";
   let footerText = "Вы вошли как:";
 
   const updateActiveLink = linkName => (activeLink = linkName);
+
+  const toggleUi = () => {
+    isUiOpen = !isUiOpen;
+    if (isPageOpen === true) isPageOpen = false;
+  };
 
   const toggleLayout = () => {
     isLayoutOpen = !isLayoutOpen;
@@ -55,7 +63,7 @@
           on:press={() => {
             theme = 'dark';
           }}
-          text="Dashboard"
+          text="Панель"
           class={segment === '.' || segment === undefined ? 'active' : ''}
           leftIcon
           href=".">
@@ -63,30 +71,43 @@
         </SidebarItem>
         <div class="l-proton-sidenav-menu-heading">Интерфейс</div>
         <SidebarItem
+                class={segment === 'ui' ? 'active' : ''}
+                on:press={() => {
+                theme = 'dark';
+                }}
+                href="ui"
+                text="UI"
+                leftIcon>
+          <i class="fas fa-table" slot="leftIcon" />
+        </SidebarItem>
+
+        <SidebarItem
           on:press={toggleLayout}
           class={!isLayoutOpen ? 'collapsed' : ''}
-          text="Layouts"
+          text="Макеты"
           leftIcon
           rightIcon>
           <i class="fas fa-columns" slot="leftIcon" />
           <i class="fas fa-angle-down" slot="rightIcon" />
         </SidebarItem>
+
         <Collapse isOpen={isLayoutOpen}>
           <Nav class="l-proton-sidenav-menu-nested">
+
             <SidebarItem
               on:press={() => {
                 theme = 'dark';
-                updateActiveLink('Static Navigation');
+                updateActiveLink('Статическая навигация');
               }}
-              class={segment === 'layouts' && activeLink === 'Static Navigation' ? 'active' : ''}
+              class={segment === 'layouts' && activeLink === 'Статическая навигация' ? 'active' : ''}
               href="layouts/static_navigation"
-              text="Static Navigation" />
+              text="Статическая навигация" />
             <SidebarItem
               on:press={() => {
                 theme = 'light';
-                updateActiveLink('Light Sidenav');
+                updateActiveLink('Светлый сайдбар');
               }}
-              class={segment === 'layouts' && activeLink === 'Light Sidenav' ? 'active' : ''}
+              class={segment === 'layouts' && activeLink === 'Светлый сайдбар' ? 'active' : ''}
               href="layouts/light_sidenav"
               text="Light Sidenav" />
           </Nav>
@@ -128,25 +149,25 @@
             <SidebarItem
               on:press={toggleAuthentication}
               class={!isAuthenticationOpen ? 'collapsed' : ''}
-              text="Authentication"
+              text="Аутентификация"
               rightIcon>
               <i class="fas fa-angle-down" slot="rightIcon" />
             </SidebarItem>
             <Collapse isOpen={isAuthenticationOpen}>
               <Nav class="l-proton-sidenav-menu-nested">
-                <SidebarItem href="pages/authentication/login" text="Login" />
+                <SidebarItem href="pages/authentication/login" text="Логин" />
                 <SidebarItem
                   href="pages/authentication/register"
-                  text="Register" />
+                  text="Зарегистрироваться" />
                 <SidebarItem
                   href="pages/authentication/forget_password"
-                  text="Forgot Password" />
+                  text="Забыли пароль" />
               </Nav>
             </Collapse>
             <SidebarItem
               on:press={toggleError}
               class={!isErrorOpen ? 'collapsed' : ''}
-              text="Error"
+              text="Ошибка"
               rightIcon>
               <i class="fas fa-angle-down" slot="rightIcon" />
             </SidebarItem>
@@ -166,7 +187,7 @@
             theme = 'dark';
           }}
           href="charts"
-          text="Charts"
+          text="Диаграммы"
           leftIcon>
           <i class="fas fa-chart-area" slot="leftIcon" />
         </SidebarItem>
@@ -176,10 +197,11 @@
             theme = 'dark';
           }}
           href="tables"
-          text="Tables"
+          text="Таблицы"
           leftIcon>
           <i class="fas fa-table" slot="leftIcon" />
         </SidebarItem>
+
       </Nav>
     </div>
     <div class="l-proton-sidenav-footer">
