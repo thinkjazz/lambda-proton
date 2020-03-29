@@ -1,4 +1,5 @@
 # λproton [lambda-proton] Лямбда Протон
+![Logo](static/l-proton-logo.png)
 Панель инструментов, сделана с использованием Svelte и Sapper, вдохновленная приборной панелью SB-Admin.
 .
 
