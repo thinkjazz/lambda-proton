@@ -28,7 +28,7 @@
 </script>
 
 <Navbar class="l-proton-topnav navbar-expand" {color} dark expand="md">
-  <NavbarBrand class="l-proton-color" href=".">{title}</NavbarBrand>
+  <NavbarBrand href=".">{title}</NavbarBrand>
   <Nav class="ml-auto" navbar>
     <Form inline>
       <InputGroup>
@@ -47,19 +47,20 @@
     <ListGroup class="ml-auto ml-md-0">
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>
-          <i class="fas fa-user fa-fw ml-3" />
+          <i class="fas fa-user-circle fa-fw ml-3" />
         </DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem>
-            <a class="dropdown-item" href="settings">Настройки</a>
+          <DropdownItem>         
+     
+          <a class="dropdown-item" href="settings"><i class="fas fa-cog" /> Настройки</a>
           </DropdownItem>
           <DropdownItem>
-            <a class="dropdown-item" href="activity_log">Активность</a>
+            <a class="dropdown-item" href="activity_log"><i class="fas fa-clipboard-list"></i> Активность</a>
           </DropdownItem>
           <DropdownItem divider />
           <DropdownItem>
             <a class="dropdown-item" href="pages/authentication/login">
-              Выйти
+            <i class="fas fa-sign-out-alt"></i>  Выйти
             </a>
           </DropdownItem>
         </DropdownMenu>

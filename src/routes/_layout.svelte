@@ -17,7 +17,7 @@
 </svelte:head>
 
 {#if segment !== 'pages'}
-  <div class="l-proton-nav-fixed">
+  <div class="l-proton-nav-static">
     <Navbar {segment} {color} {title} />
     <div id="layoutSidenav">
       <Sidebar {segment} {theme} />

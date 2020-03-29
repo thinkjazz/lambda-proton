@@ -4932,7 +4932,7 @@ input[type=button].btn-block {
 
 .navbar-dark .navbar-brand:hover,
 .navbar-dark .navbar-brand:focus {
-    color: #fff;
+    color: #42b077;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -11150,7 +11150,7 @@ body {
 }
 
 .l-proton-sidenav-dark .l-proton-sidenav-menu .l-proton-sidenav-menu-heading {
-  color: rgb(254, 202, 81);
+    color: rgb(254, 202, 81);
 }
 
 .l-proton-sidenav-dark .l-proton-sidenav-menu .nav-link {
@@ -11158,8 +11158,9 @@ body {
 }
 
 .l-proton-sidenav-dark .l-proton-sidenav-menu .nav-link .l-proton-nav-link-icon {
-    color: rgba(255, 255, 255, 0.25);
+     color: rgba(254, 195, 72, 0.5);
 }
+
 
 .l-proton-sidenav-dark .l-proton-sidenav-menu .nav-link .l-proton-sidenav-collapse-arrow {
     color: rgba(255, 255, 255, 0.25);

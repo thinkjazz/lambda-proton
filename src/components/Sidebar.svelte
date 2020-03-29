@@ -44,7 +44,7 @@
   };
 </script>
 
-<div id="layoutSidenav_nav" class="sb-nav-fixed">
+<div id="layoutSidenav_nav" class="l-proton-nav-fixed">
   <Nav
     class="l-proton-sidenav {sidenav_theme} accordion l-proton-nav-fixed"
     id="sidenavAccordion">
@@ -59,7 +59,7 @@
           class={segment === '.' || segment === undefined ? 'active' : ''}
           leftIcon
           href=".">
-          <i class="fas fa-tachometer-alt" slot="leftIcon" />
+          <i class="fas fa-atom" slot="leftIcon" />
         </SidebarItem>
         <div class="l-proton-sidenav-menu-heading">Интерфейс</div>
         <SidebarItem
@@ -94,7 +94,7 @@
         <SidebarItem
           on:press={togglePages}
           class={!isPageOpen ? 'collapsed' : ''}
-          text="Pages"
+          text="Страницы"
           leftIcon
           rightIcon>
           <svg
