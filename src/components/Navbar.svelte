@@ -28,7 +28,7 @@
 </script>
 
 <Navbar class="l-proton-topnav navbar-expand" {color} dark expand="md">
-  <NavbarBrand href=".">{title}</NavbarBrand>
+  <NavbarBrand href="."><span class="l-logo-span">λ</span>{title}<span class="l-logo-span">.js</span></NavbarBrand>
   <Nav class="ml-auto" navbar>
     <Form inline>
       <InputGroup>
