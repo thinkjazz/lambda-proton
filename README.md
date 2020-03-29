@@ -3,12 +3,12 @@
 Панель инструментов, сделана с использованием Svelte и Sapper, вдохновленная приборной панелью SB-Admin.
 .
 
-## Preview
+## Обзор
 
 ![Dashboard](static/dashboard.png)
-
-
-
+![Settings](static/settings.png)
+![Tables](static/tables.png)
+![Chart](static/chart.png)
 ## Начало работы
 
 ### Клонируем репозиторий
