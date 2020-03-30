@@ -4,11 +4,14 @@
 ![Logo](static/l-proton-logo.png)
 
 ## Демо 
-   [DEMO](https://lambda-proton-k9i1lsboc.now.sh/)
+   [Демонстрация](https://lambda-proton-k9i1lsboc.now.sh/)
 ## Обзор
 
 ![Dashboard](static/dashboard.png)
+![Response](static/response.png)
+![Static](static/static.png)
 ![Settings](static/settings.png)
+![Light Theme](static/light.png)
 ![Tables](static/tables.png)
 ![Chart](static/chart.png)
 ## Начало работы

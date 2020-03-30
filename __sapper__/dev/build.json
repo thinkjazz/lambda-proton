@@ -2,72 +2,72 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.f787d15d.js"
+    "main": "client.2aef430b.js"
   },
   "css": {
     "main": "main.2665527136.css",
     "chunks": {
       "index.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "activity_log.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "settings.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "layouts/static_navigation.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "layouts/light_sidenav.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "charts.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "tables.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "pages/_layout.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "pages/authentication/_layout.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "pages/authentication/forget_password.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "pages/authentication/register.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "pages/authentication/login.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "pages/error/_layout.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "pages/error/error_401.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "pages/error/error_404.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "pages/error/error_500.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "blog/index.svelte": [
-        "index.2c8fbbd5.css",
-        "client.f787d15d.css"
+        "index.6443f093.css",
+        "client.2aef430b.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].2d7334c3.css",
-        "client.f787d15d.css"
+        "[slug].241dd925.css",
+        "client.2aef430b.css"
       ],
       "ui/_layout.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ],
       "ui/ui.svelte": [
-        "client.f787d15d.css"
+        "client.2aef430b.css"
       ]
     }
   }
