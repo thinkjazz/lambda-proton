@@ -1,7 +1,7 @@
 {
   "name": "lambda-proton",
   "description": "lambda-proton",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
