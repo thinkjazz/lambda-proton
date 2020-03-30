@@ -27,8 +27,8 @@
   }
 </script>
 
-<Navbar class="l-proton-topnav navbar-expand" {color} dark expand="md">
-  <NavbarBrand href="."><span class="l-logo-span">λ</span>{title}<span class="l-logo-span">.js</span></NavbarBrand>
+<Navbar class="l-proton-topnav-fixed" {color} dark expand="md">
+  <NavbarBrand href="."><span class="l-logo-span">λ</span>{title}<span class="l-logo-span"></span></NavbarBrand>
   <Nav class="ml-auto" navbar>
     <Form inline>
       <InputGroup>
@@ -55,7 +55,7 @@
           <a class="dropdown-item" href="settings"><i class="fas fa-cog" /> Настройки</a>
           </DropdownItem>
           <DropdownItem>
-            <a class="dropdown-item" href="activity_log"><i class="fas fa-clipboard-list"></i> Активность</a>
+            <a class="dropdown-item" href="activity_log"><i class="fas fa-clipboard-list" /> Активность</a>
           </DropdownItem>
           <DropdownItem divider />
           <DropdownItem>
