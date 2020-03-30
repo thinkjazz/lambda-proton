@@ -4,7 +4,7 @@
 ![Logo](static/l-proton-logo.png)
 
 ## Демо 
-   [Демонстрация](https://lambda-proton-k9i1lsboc.now.sh/)
+   [Демонстрация](https://lambda-proton.thinkjazz.now.sh/)
 ## Обзор
 
 ![Dashboard](static/dashboard.png)
