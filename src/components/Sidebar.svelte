@@ -19,32 +19,31 @@
   let activeLink = "Панель";
   let footerName = "λproton boy";
   let footerText = "Вы вошли как:";
-
   let uiLabels = [
-    { label: "Alerts" },
-    { label: "Badge" },
-    { label: "Breadcrumb" },
-    { label: "Buttons" },
-    { label: "Button-group" },
-    { label: "Card" },
-    { label: "Carousel" },
-    { label: "Collapse" },
-    { label: "Dropdowns" },
-    { label: "Forms" },
-    { label: "Input-group" },
-    { label: "Jumbotron" },
-    { label: "List group" },
-    { label: "Media-object" },
-    { label: "Modal" },
-    { label: "Navs" },
-    { label: "Navbar" },
-    { label: "Pagination" },
-    { label: "Popovers" },
-    { label: "Progress" },
-    { label: "Scrollspy" },
-    { label: "Spinners" },
-    { label: "Toasts" },
-    { label: "Tooltips" }
+    { label: "Alerts", name: "alerts", icon: "fas fa-exclamation-triangle"},
+    { label: "Badge", name:"badge", icon: "fas fa-certificate"},
+    { label: "Breadcrumb", name:"breadcrumb", icon:"fas fa-ellipsis-h"},
+    { label: "Buttons", name:"buttons", icon:"fas fa-angle-double-right"},
+    { label: "Button group", name:"buttonGroup", icon:""},
+    { label: "Card", name:"card", icon:""},
+    { label: "Carousel", name:"carousel", icon:""},
+    { label: "Collapse", name:"collapse", icon:""},
+    { label: "Dropdowns", name:"dropdowns", icon:""},
+    { label: "Forms", name:"forms", icon:""},
+    { label: "Input group", name:"inputGroup", icon:""},
+    { label: "Jumbotron", name:"jumbotron", icon:""},
+    { label: "List group", name:"listGroup", icon:""},
+    { label: "Media object", name:"mediaObject", icon:""},
+    { label: "Modal", name:"modal", icon:""},
+    { label: "Navs", name:"navs", icon:""},
+    { label: "Navbar", name:"navbar", icon:""},
+    { label: "Pagination", name:"pagination", icon:""},
+    { label: "Popovers", name:"popovers", icon:""},
+    { label: "Progress", name:"progress", icon:""},
+    { label: "Scrollspy", name:"scrollspy", icon:""},
+    { label: "Spinners", name:"spinners", icon:""},
+    { label: "Toasts", name:"toasts", icon:""},
+    { label: "Tooltips", name:"tooltips", icon:""}
   ];
 
   const updateActiveLink = (linkName) => (activeLink = linkName);
@@ -232,14 +231,16 @@
         </SidebarItem>
         <Collapse isOpen={isUiOpen}>
           <Nav class="l-proton-sidenav-menu-nested">
-          {#each uiLabels as {label}}
+          {#each uiLabels as {label, name, icon}}
           <SidebarItem
               on:press={() => {
                 updateActiveLink(label);
               }}
               class={segment === 'ui' && activeLink === 'label' ? 'active' : ''}
-              href="layouts/{label}"
-              text={label} />
+              href="layouts/{name}"
+              text={label}>
+     
+          </SidebarItem>   
             {/each}
 
           </Nav>
