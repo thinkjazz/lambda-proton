@@ -4,4 +4,6 @@
 yarn-error.log
 /cypress/screenshots/
 .idea
-# __sapper__
+__sapper__
+
+.now
