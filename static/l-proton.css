@@ -11079,7 +11079,9 @@ body {
     padding-right: 1rem;
     margin: 0;
     font-weight: 500;
+    font-size: 1.5rem;
 }
+
 
 .l-proton-topnav.navbar-dark #sidebarToggle {
     color: rgba(255, 255, 255, 0.5);
