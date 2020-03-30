@@ -20,12 +20,44 @@
   let footerName = "λproton boy";
   let footerText = "Вы вошли как:";
 
-  const updateActiveLink = linkName => (activeLink = linkName);
+  let uiMenuText = [
+    'Alerts',
+    'Badge',
+    'Breadcrumb',
+    'Buttons',
+    'Button group',
+    'Card',
+    'Carousel',
+    'Collapse',
+    'Dropdowns',
+    'Forms',
+    'Input group',
+    'Jumbotron',
+    'List group',
+    'Media object',
+    'Modal',
+    'Navs',
+    'Navbar',
+    'Pagination',
+    'Popovers',
+    'Progress',
+    'Scrollspy',
+    'Spinners',
+    'Toasts',
+    'Tooltips',
+  ].forEach(function(item) {
+    return item;
+    console.log(item)
+  });
+
+  const updateActiveLink = (linkName) => (activeLink = linkName);
+
 
   const toggleUi = () => {
-    isUiOpen = !isUiOpen;
+       isUiOpen = !isUiOpen;
     if (isPageOpen === true) isPageOpen = false;
   };
+
 
 
   const toggleLayout = () => {
@@ -205,6 +237,98 @@
           <i class="fas fa-grip-horizontal" slot="leftIcon" />
           <i class="fas fa-angle-down" slot="rightIcon" />
         </SidebarItem>
+        <Collapse isOpen={isUiOpen}>
+          <Nav class="l-proton-sidenav-menu-nested">
+
+            <SidebarItem
+                    on:press={ () => {updateActiveLink(uiMenuText);}}
+                    class={segment === 'ui' && activeLink === 'value' ? 'active' : ''}
+                    href="layouts/value"
+                    text={uiMenuText}/>
+
+<!--            <SidebarItem-->
+<!--                    on:press={() => {-->
+
+<!--                    updateActiveLink('Alerts');-->
+<!--                    }}-->
+<!--                    class={segment === 'ui' && activeLink === 'Alerts' ? 'active' : ''}-->
+<!--                            href="layouts/Alerts"-->
+<!--                    text="Alerts" />-->
+<!--            <SidebarItem-->
+<!--                    on:press={() => {-->
+
+<!--                    updateActiveLink('Badge');-->
+<!--                    }}-->
+<!--                    class={segment === 'ui' && activeLink === 'Badge' ? 'active' : ''}-->
+<!--                            href="layouts/Badge"-->
+<!--                    text="Badge" />-->
+
+<!--            <SidebarItem-->
+<!--                    on:press={() => {-->
+
+<!--                    updateActiveLink('Breadcrumb');-->
+<!--                    }}-->
+<!--                    class={segment === 'ui' && activeLink === 'Breadcrumb' ? 'active' : ''}-->
+<!--                            href="layouts/Breadcrumb"-->
+<!--                    text="Breadcrumb" />-->
+
+<!--            <SidebarItem-->
+<!--                    on:press={() => {-->
+
+<!--                    updateActiveLink('Buttons');-->
+<!--                    }}-->
+<!--                    class={segment === 'ui' && activeLink === 'Buttons' ? 'active' : ''}-->
+<!--                            href="layouts/Buttons"-->
+<!--                    text="Buttons" />-->
+<!--            <SidebarItem-->
+<!--                    on:press={() => {-->
+
+<!--                    updateActiveLink('Card');-->
+<!--                    }}-->
+<!--                    class={segment === 'ui' && activeLink === 'Card' ? 'active' : ''}-->
+<!--                            href="layouts/Card"-->
+<!--                    text="Card" />-->
+
+<!--            <SidebarItem-->
+<!--                    on:press={()=>{-->
+
+<!--                    updateActiveLink('Carousel');-->
+<!--                  }}-->
+<!--                   class={segment === 'ui' && activeLink === 'Carousel' ? 'active' : ''}-->
+<!--                                 href="layouts/Carousel"-->
+<!--                   text="Carousel" />-->
+<!--            <SidebarItem-->
+<!--                    on:press={()=>{-->
+
+<!--                    updateActiveLink('Collapse');-->
+<!--                    }}-->
+<!--                    class={segment === 'ui' && activeLink === 'Collapse' ? 'active' : ''}-->
+<!--                            href="layouts/Collapse"-->
+<!--                    text="Collapse" />-->
+<!--            <SidebarItem-->
+<!--                    on:press={()=>{-->
+
+<!--                    updateActiveLink('Dropdowns');-->
+<!--                    }}-->
+<!--                    class={segment === 'ui' && activeLink === 'Dropdowns' ? 'active' : ''}-->
+<!--                            href="layouts/Dropdowns"-->
+<!--                    text="Dropdowns" />-->
+<!--            <SidebarItem-->
+<!--                    on:press={()=>{-->
+
+<!--                    updateActiveLink('Forms');-->
+<!--                    }}-->
+<!--                    class={segment === 'ui' && activeLink === 'Forms' ? 'active' : ''}-->
+<!--                            href="layouts/Dropdowns"-->
+<!--                    text="Forms" />-->
+          </Nav>
+        </Collapse>
+
+
+
+
+
+
       </Nav>
 
     </div>
