@@ -237,7 +237,7 @@
                 updateActiveLink(label);
               }}
               class={segment === 'ui' && activeLink === 'label' ? 'active' : ''}
-              href="layouts/{name}"
+              href="ui/{name}"
               text={label}>
      
           </SidebarItem>   
