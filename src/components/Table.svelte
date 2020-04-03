@@ -1,7 +1,7 @@
 <script>
   import Table from "sveltestrap/src/Table.svelte";
 
-  const tableHeading = ["#", "First Name", "Last-Name", "Username"];
+  const tableHeading = ["№", "Имя", "Фамилия", "юзернейм"];
   const tableData = [
     { SNo: "1", firstName: "PipBoy", lastName: "3000", userName: "@mdo" },
     { SNo: "2", firstName: "Gordon", lastName: "Freeman", userName: "@fat" },
