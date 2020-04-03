@@ -1,7 +1,7 @@
 {
   "name": "lambda-proton",
   "description": "lambda-proton",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
@@ -36,5 +36,22 @@
     "rollup-plugin-terser": "^4.0.4",
     "sapper": "^0.27.11",
     "svelte": "^3.18.1"
-  }
+  },
+  "main": "rollup.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thinkjazz/lambda-proton.git"
+  },
+  "keywords": [
+    "svelte",
+    "lambda",
+    "proton",
+    "ui"
+  ],
+  "author": "thinkjazz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thinkjazz/lambda-proton/issues"
+  },
+  "homepage": "https://github.com/thinkjazz/lambda-proton#readme"
 }
