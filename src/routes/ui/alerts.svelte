@@ -1,52 +1,41 @@
 <script>
-    import Breadcrumb from "sveltestrap/src/Breadcrumb.svelte";
-    import BreadcrumbItem from "sveltestrap/src/BreadcrumbItem.svelte";
-    import Card from "sveltestrap/src/Card.svelte";
-    import CardBody from "sveltestrap/src/CardBody.svelte";
-    import CardHeader from "sveltestrap/src/CardHeader.svelte";
-    import CardText from "sveltestrap/src/CardText.svelte";
-    import CardSubtitle from "sveltestrap/src/CardSubtitle.svelte";
-    import Row from "sveltestrap/src/Row.svelte";
+    import  Breadcrumb  from "sveltestrap/src/Breadcrumb.svelte";
+    import  BreadcrumbItem  from "sveltestrap/src/BreadcrumbItem.svelte";
+    import  Row  from "sveltestrap/src/Row.svelte";
+    import  Alert  from "sveltestrap/src/Alert.svelte";
 
-    // import DashboardCard from "../components/DashboardCard.svelte";
-    // import CustomCard from "../components/CustomCard.svelte";
-    // import Table from "../components/Table.svelte";
-    // import AreaChart from "../components/Charts/AreaChart.svelte";
-    // import BarChart from "../components/Charts/BarChart.svelte";
+    const colors = [
+        "primary",
+        "secondary",
+        "success",
+        "danger",
+        "warning",
+        "info",
+        "light",
+        "dark"
+    ];
 
-    let title = "λproton";
+
+    let title = "Оповещения";
 </script>
 
-<h1 class="mt-4">Панель</h1>
+<svelte:head>
+    <title>{title}</title>
+</svelte:head>
+<h1 class="mt-4">Оповещения</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Панель</BreadcrumbItem>
+    <BreadcrumbItem active>Оповещения</BreadcrumbItem>
 </Breadcrumb>
 <Row>
-    <div class="col-xl-3 col-md-6">
-        <DashboardCard cardTitle="Синяя плашка" cardColor="primary" />
-    </div>
-    <div class="col-xl-3 col-md-6">
-        <DashboardCard cardTitle="Оранжевая плашка" cardColor="warning" />
-    </div>
-    <div class="col-xl-3 col-md-6">
-        <DashboardCard cardTitle="Зеленая плашка" cardColor="success" />
-    </div>
-    <div class="col-xl-3 col-md-6">
-        <DashboardCard cardTitle="Опасная плашка" cardColor="danger" />
+    <div class="col-xl-6">
+        {#each colors as color}
+            <Alert {color}>
+                <h4 class="alert-heading text-capitalize">{color}</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <a href="#todo" class="alert-link">
+                    Кроме того, ссылки на оповещения цветные, чтобы соответствовать оповещению
+                </a>.
+            </Alert>
+        {/each}
     </div>
 </Row>
-<Row>
-    <div class="col-xl-6">
-        <CustomCard cardTitle="Пример диаграммы" cardIcon="fas fa-chart-area">
-            <AreaChart />
-        </CustomCard>
-    </div>
-    <div class="col-xl-6">
-        <CustomCard cardTitle="Пример гистограммы" cardIcon="fas fa-chart-bar">
-            <BarChart />
-        </CustomCard>
-    </div>
-</Row>
-<CustomCard cardTitle="Пример DataTable" cardIcon="fas fa-table">
-    <Table />
-</CustomCard>
