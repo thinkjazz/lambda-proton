@@ -16,7 +16,7 @@
     ];
 
 
-    let title = "Кнопки";
+    let title = "Группы кнопок | UI | Пользовательский Интерфейс";
 </script>
 
 <svelte:head>
@@ -28,7 +28,7 @@
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Группы кнопок</h1>
+        <h2 class="mt-4">Группы кнопок</h2>
         <ButtonGroup>
             <Button active>Alpha</Button>
             <Button>Bravo</Button>
