@@ -25,7 +25,8 @@
     function handleUpdate(event) {
         isOpen = event.detail.isOpen;
     }
-    const toggle = () => (isOpen= !isOpen);
+    // let open = false;
+    // const toggle = () => (open = !open);
 
     let title = "Навигационное меню | UI | Пользовательский Интерфейс";
 </script>
@@ -38,25 +39,25 @@
     <BreadcrumbItem active>Навигационное меню</BreadcrumbItem>
 </Breadcrumb>
 
-<Row>
-    <div class="col-xl-12">
-        <h2 class="mt-4">Навигационный тогглер Toggler</h2>
-        <Navbar color="light" light>
-            <NavbarBrand href="/" class="mr-auto">λproton navigation</NavbarBrand>
-            <NavbarToggler on:click={toggle} />
-            <Collapse {isOpen} navbar expand="md" on:update={handleUpdate} className="mr-2" >
-                <Nav navbar>
-                    <NavItem>
-                        <NavLink href="#components/">Компонент</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="https://github.com/thinkjazz/lambda-proton">GitHub</NavLink>
-                    </NavItem>
-                </Nav>
-            </Collapse>
-        </Navbar>
-    </div>
-</Row>
+<!--<Row>-->
+<!--    <div class="col-xl-12">-->
+<!--        <h2 class="mt-4">Навигационный тогглер Toggler</h2>-->
+<!--        <Navbar color="light" light>-->
+<!--            <NavbarBrand href="/" class="mr-auto">sveltestrap</NavbarBrand>-->
+<!--            <NavbarToggler on:click={toggle} className="mr-2" />-->
+<!--            <Collapse {open} navbar>-->
+<!--                <Nav navbar>-->
+<!--                    <NavItem>-->
+<!--                        <NavLink href="#components/">Components</NavLink>-->
+<!--                    </NavItem>-->
+<!--                    <NavItem>-->
+<!--                        <NavLink href="https://github.com/bestguy/sveltestrap">GitHub</NavLink>-->
+<!--                    </NavItem>-->
+<!--                </Nav>-->
+<!--            </Collapse>-->
+<!--        </Navbar>-->
+<!--    </div>-->
+<!--</Row>-->
 <Row>
     <div class="col-xl-12">
         <h2 class="mt-4">Навигационное меню</h2>
