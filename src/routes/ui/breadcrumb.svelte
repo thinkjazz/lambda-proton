@@ -5,7 +5,7 @@
 
 
 
-    let title = "Кнопки";
+    let title = "Хлебные крошки | UI | Пользовательский интерфейс";
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Хлебные крошки</h1>
+        <h2 class="mt-4">Хлебные крошки</h2>
         <Breadcrumb>
             <BreadcrumbItem active>Домой</BreadcrumbItem>
         </Breadcrumb>
