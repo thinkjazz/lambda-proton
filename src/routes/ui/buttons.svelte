@@ -2,8 +2,9 @@
     import  Breadcrumb  from "sveltestrap/src/Breadcrumb.svelte";
     import  BreadcrumbItem  from "sveltestrap/src/BreadcrumbItem.svelte";
     import  Row  from "sveltestrap/src/Row.svelte";
-    import  { Button, ButtonGroup, ButtonToolbar }  from "sveltestrap";
-
+    import  Button from "sveltestrap/src/Button.svelte";
+    import  ButtonGroup from "sveltestrap/src/ButtonGroup.svelte";
+    import  ButtonToolbar from  "sveltestrap/src/ButtonToolbar.svelte";
     const colors = [
         "primary",
         "secondary",

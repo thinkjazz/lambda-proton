@@ -16,4 +16,5 @@
       <p class="my-3 text-center">Your Activity Chart</p>
     </CardBody>
   </Card>
+
 </div>
