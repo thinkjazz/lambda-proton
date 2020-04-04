@@ -17,7 +17,7 @@
     ];
 
 
-    let title = "Кнопки";
+    let title = "Кнопки | UI | Пользовательский интерфейс";
 </script>
 
 <svelte:head>
@@ -29,7 +29,7 @@
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Цвета кнопок</h1>
+        <h2 class="mt-4">Цвета кнопок</h2>
         {#each colors as color}
             <div>
                 <Button {color}>
@@ -41,7 +41,7 @@
 </Row>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Кнопки с контурами</h1>
+        <h2 class="mt-4">Кнопки с контурами</h2>
         {#each colors as color}
             <div>
                 <Button outline {color}>
@@ -53,7 +53,7 @@
 </Row>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Неактивные</h1>
+        <h2 class="mt-4">Неактивные</h2>
         {#each colors as color}
             <div>
                 <Button disabled {color}>
@@ -65,7 +65,7 @@
 </Row>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Размеры</h1>
+        <h2 class="mt-4">Размеры</h2>
         <Button size="lg">Large</Button>
         <Button size="sm">Small</Button>
         <Button block>Block</Button>
@@ -73,7 +73,7 @@
 </Row>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Группы кнопок</h1>
+        <h2 class="mt-4">Группы кнопок</h2>
         <ButtonGroup>
             <Button active>Alpha</Button>
             <Button>Bravo</Button>
@@ -83,7 +83,7 @@
 </Row>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Тулбар</h1>
+        <h2 class="mt-4">Тулбар</h2>
         <ButtonToolbar>
             <Button>Alpha</Button>
             <Button>Bravo</Button>
