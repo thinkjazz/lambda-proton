@@ -15,7 +15,7 @@
         "light",
         "dark"
     ];
-    let title = "Значки";
+    let title = "Значки | UI | Пользовательский интерфейс";
 </script>
 
 <svelte:head>
@@ -27,7 +27,7 @@
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Типографика</h1>
+        <h2 class="mt-4">Типографика</h2>
         <h1>Заголовок <Badge>Новый</Badge></h1>
         <h2>Заголовок <Badge>Новый</Badge></h2>
         <h3>Заголовок <Badge>Новый</Badge></h3>
@@ -38,11 +38,11 @@
 </Row>
 <Row>
     <div class="col-xl-6">
-        <h1 class="mt-4">Уведомление</h1>
+        <h2 class="mt-4">Уведомление</h2>
         <Button color="primary" outline>
             Уведомление <Badge color="secondary">4</Badge>
         </Button>
-        <h1 class="mt-4">Цвета</h1>
+        <h2 class="mt-4">Цвета</h2>
         {#each colors as color}
             <div>
                 <Badge {color}>
@@ -55,7 +55,7 @@
 <Row>
 
     <div class="col-xl-6">
-        <h1 class="mt-4">Округлые значки</h1>
+        <h2 class="mt-4">Округлые значки</h2>
         {#each colors as color}
             <div>
                 <Badge pill {color}>
@@ -68,7 +68,7 @@
   <Row>
 
       <div class="col-xl-1">
-          <h1 class="mt-4">Цветные значки</h1>
+          <h2 class="mt-4">Цветные значки</h2>
           <Badge href="#" color="primary">Основной</Badge>
           <Badge href="#" color="secondary">Вторичный</Badge>
           <Badge href="#" color="success">Успешно</Badge>
