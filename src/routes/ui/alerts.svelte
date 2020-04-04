@@ -16,7 +16,7 @@
     ];
 
 
-    let title = "Оповещения";
+    let title = "Оповещения | UI | Пользовательский интерфейс";
 </script>
 
 <svelte:head>
@@ -28,6 +28,7 @@
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
+        <h2 class="mt-4">Оповещения</h2>
         {#each colors as color}
             <Alert {color}>
                 <h4 class="alert-heading text-capitalize">{color}</h4>
