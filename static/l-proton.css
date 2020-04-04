@@ -10709,7 +10709,9 @@ button.bg-dark:focus {
 .text-white {
     color: #fff !important;
 }
-
+.text-bright-yarrow {
+    color: #fdcb6e !important;
+}
 .text-primary {
     color: #54a0ff !important;
 }
