@@ -14,6 +14,10 @@
 ![Light Theme](static/light.png)
 ![Tables](static/tables.png)
 ![Chart](static/chart.png)
+![Alert](static/alert.png)
+![Badge](static/badge.png)
+![Buttons](static/buttons.png)
+![BreadCrumbs](static/breadcrumbs.png)
 ## Начало работы
 
 
