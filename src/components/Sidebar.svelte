@@ -31,6 +31,7 @@
     { label: "Dropdowns", name:"dropdowns", icon:""},
     { label: "Forms", name:"forms", icon:""},
     { label: "Grid", name: "grid", icon: "fas fa-exclamation-triangle"},
+    { label: "Input", name: "input", icon: "fas fa-exclamation-triangle"},
     { label: "Input group", name:"inputGroup", icon:""},
     { label: "Jumbotron", name:"jumbotron", icon:""},
     { label: "List group", name:"listGroup", icon:""},
