@@ -66,28 +66,28 @@
 <Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Размеры</h2>
-        <Button size="lg">Large</Button>
-        <Button size="sm">Small</Button>
-        <Button block>Block</Button>
+        <Button size="lg">Большие</Button>
+        <Button size="sm">Маленькие</Button>
+        <Button block>Блок</Button>
     </div>
 </Row>
 <Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Группы кнопок</h2>
         <ButtonGroup>
-            <Button active>Alpha</Button>
-            <Button>Bravo</Button>
-            <Button>Charlie</Button>
+            <Button active>Альфа</Button>
+            <Button>Браво</Button>
+            <Button>Чарли</Button>
         </ButtonGroup>
     </div>
 </Row>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Тулбар</h2>
+        <h2 class="mt-4">Тулбары с кнопками</h2>
         <ButtonToolbar>
-            <Button>Alpha</Button>
-            <Button>Bravo</Button>
-            <Button>Charlie</Button>
+            <Button>Альфа</Button>
+            <Button>Браво</Button>
+            <Button>Чарли</Button>
         </ButtonToolbar>
     </div>
 </Row>
