@@ -30,9 +30,9 @@
     <div class="col-xl-6">
         <h2 class="mt-4">Группы кнопок</h2>
         <ButtonGroup>
-            <Button active>Alpha</Button>
-            <Button>Bravo</Button>
-            <Button>Charlie</Button>
+            <Button active>Альфа</Button>
+            <Button>Браво</Button>
+            <Button>Чарли</Button>
         </ButtonGroup>
     </div>
 </Row>
