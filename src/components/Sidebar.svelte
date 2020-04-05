@@ -28,6 +28,7 @@
     { label: "Card", name:"card", icon:""},
     { label: "Carousel", name:"carousel", icon:""},
     { label: "Collapse", name:"collapse", icon:""},
+    { label: "Custom Inputs", name:"customInputs", icon:""},
     { label: "Dropdowns", name:"dropdowns", icon:""},
     { label: "Forms", name:"forms", icon:""},
     { label: "Grid", name: "grid", icon: "fas fa-exclamation-triangle"},
