@@ -156,11 +156,11 @@
         <h2 class="mt-4">Связывание: (Binding)</h2>
         <p>Рекомендуемый способ привязки значений к входам - ​​через <code> bind: value = yourBind в фигурных скобках </code></p>
         <FormGroup>
-            <Label>Type here</Label>
+            <Label>Начните печать тут</Label>
             <Input type="text" bind:value={inputValue} />
         </FormGroup>
         {#if inputValue}
-            <p>You typed: {inputValue}</p>
+            <p>Вы напечатали: {inputValue}</p>
         {/if}
     </div>
 </Row>
@@ -171,7 +171,7 @@
             но это не рекомендуется, если вы просто привязаны к простому значению - Svelte не реагирует. :-)
             Если вам нужно больше экзотических событий, пожалуйста, следуйте номер <a href="https://github.com/bestguy/sveltestrap/issues/36">36.</a></p>
         <FormGroup>
-            <Label>Type here</Label>
+            <Label>Начните печать тут</Label>
             <Input
                     type="text"
                     value={inputValueEventBind}
@@ -181,15 +181,15 @@
                             on:input={e => (inputValueEventBind = e.target.value)} />
         </FormGroup>
         {#if changeValue}
-            <p><code>on:change</code> says you typed: {changeValue}</p>
+            <p><code>on:change</code> говорит, что ты набрал: {changeValue}</p>
         {/if}
         {#if inputValueEventBind}
-            <p><code>on:input</code> says you are typing: {inputValueEventBind}</p>
+            <p><code>on:input</code> говорит, что ты печатаешь: {inputValueEventBind}</p>
         {/if}
         {#if !focused}
-            <p><code>on:blur</code> says you are not focused.</p>
+            <p><code>on:blur</code> говорит, что ты не убрал фокус с поля ввода.</p>
         {:else}
-            <p><code>on:focus</code> says you are focused.</p>
+            <p><code>on:focus</code> говорит, что ты навел фокус на поле ввода.</p>
         {/if}
     </div>
 </Row>
