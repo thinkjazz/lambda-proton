@@ -23,46 +23,46 @@
         <h2 class="mt-4">Макеты и сетки</h2>
         <Container>
             <Row>
-                <Col>.col</Col>
+                <Col><code>.col</code></Col>
             </Row>
             <Row>
-                <Col>.col</Col>
-                <Col>.col</Col>
-                <Col>.col</Col>
-                <Col>.col</Col>
+                <Col><code>.col</code></Col>
+                <Col><code>.col</code></Col>
+                <Col><code>.col</code></Col>
+                <Col><code>.col</code></Col>
             </Row>
             <Row>
-                <Col xs="3">.col-3</Col>
+                <Col xs="3"><code>.col-3</code></Col>
                 <Col xs="auto">
-                    .col-auto - variable width content
+                    <code>.col-auto - variable width content</code>
                 </Col>
-                <Col xs="3">.col-3</Col>
+                <Col xs="3"><code>.col-3</code></Col>
             </Row>
             <Row>
-                <Col xs="6">.col-6</Col>
-                <Col xs="6">.col-6</Col>
+                <Col xs="6"><code>.col-6</code></Col>
+                <Col xs="6"><code>.col-6</code></Col>
             </Row>
             <Row>
-                <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-                <Col xs="6" sm="4">.col-6 .col-sm-4</Col>
-                <Col sm="4">.col-sm-4</Col>
+                <Col xs="6" sm="4"><code>.col-6 .col-sm-4</code></Col>
+                <Col xs="6" sm="4"><code>.col-6 .col-sm-4</code></Col>
+                <Col sm="4"><code>.col-sm-4</code></Col>
             </Row>
             <Row>
                 <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                    .col-sm-6 .order-sm-2 .offset-sm-1
+                    <code>.col-sm-6 .order-sm-2 .offset-sm-1</code>
                 </Col>
             </Row>
             <Row>
                 <Col sm="12" md={{ size: 6, offset: 3 }}>
-                    .col-sm-12 .col-md-6 .offset-md-3
+                    <code>.col-sm-12 .col-md-6 .offset-md-3</code>
                 </Col>
             </Row>
             <Row>
                 <Col sm={{ size: 'auto', offset: 1 }}>
-                    .col-sm-auto .offset-sm-1
+                    <code>.col-sm-auto .offset-sm-1</code>
                 </Col>
                 <Col sm={{ size: 'auto', offset: 1 }}>
-                    .col-sm-auto .offset-sm-1
+                    <code>.col-sm-auto .offset-sm-1</code>
                 </Col>
             </Row>
         </Container>
