@@ -11,7 +11,10 @@
     import  Input from "sveltestrap/src/Input.svelte";
     import  Label from "sveltestrap/src/Label.svelte";
 
-    let inputValue = '';
+    let inputValue = "";
+    let inputValueEventBind = "";
+    let changeValue = "";
+    let focused = false;
 </script>
 
 <svelte:head>
@@ -151,13 +154,42 @@
 <Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Связывание: (Binding)</h2>
-        <p>Рекомендуемый способ привязки значений к входам - ​​через <code>bind: value = {yourValue}</code></p>
+        <p>Рекомендуемый способ привязки значений к входам - ​​через <code> bind: value = yourBind в фигурных скобках </code></p>
         <FormGroup>
             <Label>Type here</Label>
             <Input type="text" bind:value={inputValue} />
         </FormGroup>
         {#if inputValue}
             <p>You typed: {inputValue}</p>
+        {/if}
+    </div>
+</Row>
+<Row>
+    <div class="col-xl-6">
+        <h2 class="mt-4">Привязка событий (Event Binding) </h2>
+        <p>Вы также можете связать непосредственно с обработчиками событий: <code>on:blur on:focus on:keydown on:keyup on:change on:input</code>
+            но это не рекомендуется, если вы просто привязаны к простому значению - Svelte не реагирует. :-)
+            Если вам нужно больше экзотических событий, пожалуйста, следуйте номер <a href="https://github.com/bestguy/sveltestrap/issues/36">36.</a></p>
+        <FormGroup>
+            <Label>Type here</Label>
+            <Input
+                    type="text"
+                    value={inputValueEventBind}
+                    on:blur={() => focused = false}
+                    on:focus={() => focused = true}
+                            on:change={e => (changeValue = e.target.value)}
+                            on:input={e => (inputValueEventBind = e.target.value)} />
+        </FormGroup>
+        {#if changeValue}
+            <p><code>on:change</code> says you typed: {changeValue}</p>
+        {/if}
+        {#if inputValueEventBind}
+            <p><code>on:input</code> says you are typing: {inputValueEventBind}</p>
+        {/if}
+        {#if !focused}
+            <p><code>on:blur</code> says you are not focused.</p>
+        {:else}
+            <p><code>on:focus</code> says you are focused.</p>
         {/if}
     </div>
 </Row>
