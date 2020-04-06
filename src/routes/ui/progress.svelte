@@ -112,3 +112,58 @@
         </Progress>
     </div>
 </Row>
+<Row>
+    <div class="col-xl-6">
+        <h2 class="mt-4">Комбинированные</h2>
+        <h3 class="mt-4">Пример</h3>
+        <div class="text-center">Flat</div>
+        <Progress multi>
+            <Progress bar value="15" />
+            <Progress bar color="success" value="20" />
+            <Progress bar color="info" value="25" />
+            <Progress bar color="warning" value="20" />
+            <Progress bar color="danger" value="15" />
+        </Progress>
+        <div class="text-center">С метками</div>
+        <Progress multi>
+            <Progress bar value="15">Хех</Progress>
+            <Progress bar color="success" value="35">Ох!</Progress>
+            <Progress bar color="warning" value="25">25%</Progress>
+            <Progress bar color="danger" value="25">Гляди!!</Progress>
+        </Progress>
+        <div class="text-center">Полоски и анимация</div>
+        <Progress multi>
+            <Progress bar striped value="15">Полоски</Progress>
+            <Progress bar animated color="success" value="30">Анимированные полоски</Progress>
+            <Progress bar color="info" value="25">Гладкая</Progress>
+        </Progress>
+    </div>
+</Row>
+<Row>
+    <div class="col-xl-6">
+        <h2 class="mt-4">C максимальными значениям</h2>
+        <h3 class="mt-4">Пример</h3>
+        <div class="text-center">Flat</div>
+        <div class="text-center">1 of 5</div>
+        <Progress value="1" max="5" />
+        <div class="text-center">50 of 135</div>
+        <Progress value={50} max="135" />
+        <div class="text-center">75 of 111</div>
+        <Progress value={75} max={111} />
+        <div class="text-center">463 of 500</div>
+        <Progress value="463" max={500} />
+
+        <div class="text-center">Разное (40) of 55</div>
+        <Progress multi>
+            <Progress bar value="5" max={55}>5</Progress>
+            <Progress bar color="success" value="15" max={55}>15</Progress>
+            <Progress bar color="warning" value="10" max={55}>10</Progress>
+            <Progress bar color="danger" value="10" max={55}>10</Progress>
+        </Progress>
+    </div>
+</Row>
+<Row>
+    <div class="col-xl-6">
+        <br>
+    </div>
+</Row>
