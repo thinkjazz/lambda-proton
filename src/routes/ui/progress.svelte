@@ -61,3 +61,20 @@
         <Progress color="danger" value="100" />
     </div>
 </Row>
+<Row>
+    <div class="col-xl-6">
+        <h2 class="mt-4">С метками</h2>
+        <h3 class="mt-4">Пример</h3>
+        <Progress value="25">25%</Progress>
+        <Progress value={50}>1/2</Progress>
+        <Progress value={75}>Ты почти тут</Progress>
+        <Progress color="success" value="100">Ты сделал это</Progress>
+        <Progress multi>
+            <Progress bar value="15">Кек</Progress>
+            <Progress bar color="success" value="30">Азазаз!</Progress>
+            <Progress bar color="info" value="25">Ахах</Progress>
+            <Progress bar color="warning" value="20">20%</Progress>
+            <Progress bar color="danger" value="5">!!</Progress>
+        </Progress>
+    </div>
+</Row>
