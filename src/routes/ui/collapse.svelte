@@ -5,8 +5,9 @@
     import  Row  from "sveltestrap/src/Row.svelte";
     import  Button from "sveltestrap/src/Button.svelte";
     import  Collapse from "sveltestrap/src/Collapse.svelte";
-    import  CardBody from "sveltestrap/src/CardBody.svelte"
-    import  Card from "sveltestrap/src/Card.svelte"
+    import  CardBody from "sveltestrap/src/CardBody.svelte";
+    import  Card from "sveltestrap/src/Card.svelte";
+    import UncontrolledCollapse from "sveltestrap/src/UncontrolledCollapse.svelte";
 
     const colors = [
         "primary",
@@ -71,8 +72,10 @@
 <Row>
     <div class="col-xl-6">
         <h2 class="mt-4">События</h2>
-        <p class="lead">
-            Используйте props on:enter, onEntering, onExiting и onExited
+        <p>
+            Используйте props <code>
+            on:onEntering, onEntering, onExiting и onExited
+        </code>
             для обратных вызовов после того,
             как Collapse завершит открытие (entering) или закрытие (exiting).
         </p>
@@ -90,5 +93,30 @@
                 anderson cred nesciunt sapiente ea proident.
             </Card>
         </Collapse>
+    </div>
+</Row>
+<Row>
+    <div class="col-xl-6">
+        <h2 class="mt-4">Неконтролируемый коллапсер без isOpen</h2>
+        <p>
+            Для самых простых случаев использования неконтролируемый
+            компонент может обеспечить требуемую функциональность без
+            необходимости управлять/управлять состоянием компонента.
+            <code>UncontrolledCollapse</code> не требует  <code>isOpen</code> prop.
+            Вместо этого передайте переключающий реквизит.
+            Переключатель - это строка, которая запустит   <code>querySelectorAll</code>
+            для поиска dom-элементов, которые инициируют переключение.
+        </p>
+    </div>
+    <div class="col-xl-6">
+        <h3 class="mt-4"><small>Пример</small></h3>
+        <Button color="primary" id="toggler" class="mb-3">Переключатель</Button>
+        <UncontrolledCollapse toggler="#toggler">
+            <Card body>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni,
+                voluptas debitis similique porro a molestias consequuntur earum odio
+                officiis natus, amet hic, iste sed dignissimos esse fuga! Minus, alias.
+            </Card>
+        </UncontrolledCollapse>
     </div>
 </Row>
