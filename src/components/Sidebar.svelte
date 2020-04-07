@@ -254,7 +254,7 @@
     </div>
     <div class="l-proton-sidenav-footer">
       <div class="small">{footerText}</div>
-      {footerName}
+      <span class="badge badge-danger">{footerName}</span>
     </div>
   </Nav>
 </div>
