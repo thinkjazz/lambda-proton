@@ -27,22 +27,25 @@
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Типографика</h2>
-        <h1>Заголовок <Badge>Новый</Badge></h1>
-        <h2>Заголовок <Badge>Новый</Badge></h2>
-        <h3>Заголовок <Badge>Новый</Badge></h3>
+        <h2 class="mt-4">Пример</h2>
+        <h1>Заголовок <Badge color="success">Новый</Badge></h1>
+        <h2>Заголовок <Badge color="warning" >Новый</Badge></h2>
+        <h3>Заголовок <Badge color="danger" >Новый</Badge></h3>
         <h4>Заголовок <Badge>Новый</Badge></h4>
         <h5>Заголовок <Badge>Новый</Badge></h5>
         <h6>Заголовок <Badge>Новый</Badge></h6>
     </div>
-</Row>
-<Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Уведомление</h2>
+        <h4 class="mt-4">Пример</h4>
         <Button color="primary" outline>
             Уведомление <Badge color="secondary">4</Badge>
         </Button>
+    </div>
+    <div class="col-xl-6">
+
         <h2 class="mt-4">Цвета</h2>
+        <h4 class="mt-4">Пример</h4>
         {#each colors as color}
             <div>
                 <Badge {color}>
@@ -51,11 +54,9 @@
             </div>
         {/each}
     </div>
-</Row>
-<Row>
-
     <div class="col-xl-6">
         <h2 class="mt-4">Округлые значки</h2>
+        <h4 class="mt-4">Пример</h4>
         {#each colors as color}
             <div>
                 <Badge pill {color}>
@@ -66,9 +67,9 @@
     </div>
 </Row>
   <Row>
-
-      <div class="col-xl-1">
+      <div class="col-xl-12">
           <h2 class="mt-4">Цветные значки</h2>
+          <h4 class="mt-4">Пример</h4>
           <Badge href="#" color="primary">Основной</Badge>
           <Badge href="#" color="secondary">Вторичный</Badge>
           <Badge href="#" color="success">Успешно</Badge>
@@ -81,3 +82,8 @@
   </Row>
 
 
+<Row>
+    <div class="col-xl-12">
+        <br>
+    </div>
+</Row>
