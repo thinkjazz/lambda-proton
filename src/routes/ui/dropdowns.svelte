@@ -85,7 +85,11 @@
         </Dropdown>
 
     </div>
-    <div class="col-xl-6">
+
+</Row>
+
+<Row>
+    <div class="col-xl-12">
         <Dropdown
                 direction="up"
                 {isOpen}
