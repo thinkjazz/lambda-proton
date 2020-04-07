@@ -5,10 +5,9 @@
 <footer class="py-4 bg-dark mt-auto">
   <Container fluid={true}>
     <div class="d-flex align-items-center justify-content-between small">
-      <div class="text-muted">
-        Создано при помощи Г.Э.C.К
-        <a href="https://github.com/thinkjazz">thinkjazz</a>
-      </div>
+      <div class="badge badge-warning">
+          Make in Svelte with Sapper and Sveltestrap
+         </div>
       <div>
         <a href="/">Privacy Policy</a>
         &middot;
