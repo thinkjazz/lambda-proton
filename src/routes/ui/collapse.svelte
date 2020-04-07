@@ -7,7 +7,7 @@
     import  Collapse from "sveltestrap/src/Collapse.svelte";
     import  CardBody from "sveltestrap/src/CardBody.svelte";
     import  Card from "sveltestrap/src/Card.svelte";
-    import UncontrolledCollapse from "sveltestrap/src/UncontrolledCollapse.svelte";
+    import  UncontrolledCollapse from "sveltestrap/src/UncontrolledCollapse.svelte";
 
     const colors = [
         "primary",
