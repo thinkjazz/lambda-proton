@@ -1,5 +1,5 @@
 <script>
-    let title = "Дропдауны | Ниспадающее контекстное меню | UI | Пользовательский Интерфейс";
+    let title = "Ниспадающее контекстное меню | UI | Пользовательский Интерфейс";
     import  Breadcrumb  from "sveltestrap/src/Breadcrumb.svelte";
     import  BreadcrumbItem  from "sveltestrap/src/BreadcrumbItem.svelte";
     import  Row  from "sveltestrap/src/Row.svelte";
@@ -20,6 +20,8 @@
         "dark"
     ];
     let isOpen = false;
+    let leftIsOpen = false;
+    let rightIsOpen = false;
 
 </script>
 
@@ -52,7 +54,7 @@
             это преднамеренное дизайнерское решение.</p>
     </div>
     <div class="col-xl-6">
-        <Dropdown color="success"  {isOpen} toggle={() => (isOpen = !isOpen)}>
+        <Dropdown   {isOpen} toggle={() => (isOpen = !isOpen)}>
             <DropdownToggle caret>Dropdown</DropdownToggle>
             <DropdownMenu>
                 <DropdownItem header>Хедер</DropdownItem>
@@ -65,5 +67,59 @@
             </DropdownMenu>
         </Dropdown>
     </div>
+</Row>
 
+<Row>
+    <div class="col-xl-6">
+        <h2 class="mt-4">Выравнивание</h2>
+        <h3 class="mt-4">Пример</h3>
+        <Dropdown isOpen={isOpen} toggle="{() => isOpen = !isOpen}">
+            <DropdownToggle caret>
+                Ниспадающее меню выравненное по правому краю
+            </DropdownToggle>
+            <DropdownMenu right>
+                <DropdownItem header>Заголовок</DropdownItem>
+                <DropdownItem disabled>Действие</DropdownItem>
+                <DropdownItem>Другое действие</DropdownItem>
+            </DropdownMenu>
+        </Dropdown>
+
+    </div>
+    <div class="col-xl-6">
+        <Dropdown
+                direction="up"
+                {isOpen}
+                toggle={() => (isOpen = !isOpen)}
+        >
+            <DropdownToggle caret>Dropup</DropdownToggle>
+            <DropdownMenu>
+                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem>Another Action</DropdownItem>
+            </DropdownMenu>
+        </Dropdown>
+
+        <Dropdown
+                direction="left"
+                isOpen={leftIsOpen}
+                toggle={() => (leftIsOpen = !leftIsOpen)}
+        >
+            <DropdownToggle caret>Dropleft</DropdownToggle>
+            <DropdownMenu>
+                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem>Another Action</DropdownItem>
+            </DropdownMenu>
+        </Dropdown>
+
+        <Dropdown
+                direction="right"
+                isOpen={rightIsOpen}
+                toggle={() => (rightIsOpen = !rightIsOpen)}
+        >
+            <DropdownToggle caret>Dropright</DropdownToggle>
+            <DropdownMenu>
+                <DropdownItem>Another Action</DropdownItem>
+                <DropdownItem>Another Action</DropdownItem>
+            </DropdownMenu>
+        </Dropdown>
+    </div>
 </Row>
