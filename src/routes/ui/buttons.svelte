@@ -29,21 +29,23 @@
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Цвета кнопок</h2>
+        <h2 class="mt-4">Цветные</h2>
+        <h4 class="mt-4">Пример</h4>
         {#each colors as color}
             <div>
+                <p></p>
                 <Button {color}>
                     {color}
                 </Button>
             </div>
         {/each}
     </div>
-</Row>
-<Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Кнопки с контурами</h2>
+        <h2 class="mt-4">Контурные</h2>
+        <h4 class="mt-4">Пример</h4>
         {#each colors as color}
             <div>
+                <p></p>
                 <Button outline {color}>
                     {color}
                 </Button>
@@ -51,19 +53,20 @@
         {/each}
     </div>
 </Row>
+
 <Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Неактивные</h2>
+        <h4 class="mt-4">Пример</h4>
         {#each colors as color}
             <div>
+                <p></p>
                 <Button disabled {color}>
                     {color}
                 </Button>
             </div>
         {/each}
     </div>
-</Row>
-<Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Размеры</h2>
         <Button size="lg">Большие</Button>
@@ -80,8 +83,6 @@
             <Button>Чарли</Button>
         </ButtonGroup>
     </div>
-</Row>
-<Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Тулбары с кнопками</h2>
         <ButtonToolbar>
@@ -89,5 +90,10 @@
             <Button>Браво</Button>
             <Button>Чарли</Button>
         </ButtonToolbar>
+    </div>
+</Row>
+<Row>
+    <div class="col-xl-12">
+ <br> <br>
     </div>
 </Row>
