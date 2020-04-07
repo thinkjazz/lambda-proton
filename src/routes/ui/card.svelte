@@ -25,20 +25,21 @@
 <Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Карточки</h2>
+        <h4 class="mt-4">Пример</h4>
         <Card>
             <CardBody>Привет, Мир!</CardBody>
         </Card>
     </div>
-</Row>
-<Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Сокращенная запись</h2>
-        <Card body>Goodbye Cruel World</Card>
+        <h4 class="mt-4">Пример</h4>
+        <Card body>Прощай жестокий мир</Card>
     </div>
-</Row>
+ </Row>
 <Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Хедер и Футер</h2>
+        <h4 class="mt-4">Пример</h4>
         <Card class="mb-3">
             <CardHeader>
                 <CardTitle>Заголовок</CardTitle>
@@ -54,10 +55,9 @@
             <CardFooter>Футер</CardFooter>
         </Card>
     </div>
-</Row>
-<Row>
     <div class="col-xl-6">
         <h2 class="mt-4">Цвета в карточках</h2>
+        <h4 class="mt-4">Пример</h4>
         <Card body color="primary" inverse class="mb-3">Основной</Card>
         <Card body color="secondary" class="mb-3 text-white">Вторичный</Card>
         <Card body color="success" class="mb-3">Успешный</Card>
