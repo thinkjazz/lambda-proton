@@ -14,6 +14,7 @@
     import  DropdownToggle from "sveltestrap/src/DropdownToggle.svelte";
     import  DropdownMenu from "sveltestrap/src/DropdownMenu.svelte";
     import  DropdownItem from "sveltestrap/src/DropdownItem.svelte";
+    import UncontrolledCollapse from "sveltestrap/src/UncontrolledCollapse.svelte";
 
     const colors = [
         "primary", "secondary", "success", "danger", "warning", "info", "light", "dark"
@@ -25,9 +26,7 @@
     function handleUpdate(event) {
         isOpen = event.detail.isOpen;
     }
-    // let open = false;
-    // const toggle = () => (open = !open);
-
+    const toggler = () => (isOpen = !isOpen);
     let title = "Навигационное меню | UI | Пользовательский Интерфейс";
 </script>
 
@@ -39,29 +38,28 @@
     <BreadcrumbItem active>Навигационное меню</BreadcrumbItem>
 </Breadcrumb>
 
-<!--<Row>-->
-<!--    <div class="col-xl-12">-->
-<!--        <h2 class="mt-4">Навигационный тогглер Toggler</h2>-->
-<!--        <Navbar color="light" light>-->
-<!--            <NavbarBrand href="/" class="mr-auto">sveltestrap</NavbarBrand>-->
-<!--            <NavbarToggler on:click={toggle} className="mr-2" />-->
-<!--            <Collapse {open} navbar>-->
-<!--                <Nav navbar>-->
-<!--                    <NavItem>-->
-<!--                        <NavLink href="#components/">Components</NavLink>-->
-<!--                    </NavItem>-->
-<!--                    <NavItem>-->
-<!--                        <NavLink href="https://github.com/bestguy/sveltestrap">GitHub</NavLink>-->
-<!--                    </NavItem>-->
-<!--                </Nav>-->
-<!--            </Collapse>-->
-<!--        </Navbar>-->
-<!--    </div>-->
-<!--</Row>-->
 <Row>
     <div class="col-xl-12">
-        <h2 class="mt-4">Навигационное меню</h2>
-
+        <h3 class="mt-4">Пример</h3>
+        <Navbar color="dark">
+            <NavbarBrand href="/" class="mr-auto">λproton </NavbarBrand>
+            <NavbarToggler on:click={toggler} className="mr-2" />
+            <Collapse {isOpen} navbar>
+                <Nav navbar>
+                    <NavItem>
+                        <NavLink href="#components/">Компоненты</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href="https://github.com/thinkjazz/lambda-proton">GitHub</NavLink>
+                    </NavItem>
+                </Nav>
+            </Collapse>
+        </Navbar>
+    </div>
+</Row>
+<Row>
+    <div class="col-xl-12">
+        <h3 class="mt-4">Пример</h3>
         <Navbar color="light" light expand="md">
             <NavbarBrand href="/">λproton navigation</NavbarBrand>
             <NavbarToggler on:click={() => (isOpen = !isOpen)} />
