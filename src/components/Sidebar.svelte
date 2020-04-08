@@ -50,7 +50,7 @@
   ];
 
   const updateActiveLink = (linkName) => (activeLink = linkName);
-
+  const updateActiveLinkFromArray = (linkItem) => (activeLink = uiLabels.forEach());
 
   const toggleLayout = () => {
     isLayoutOpen = !isLayoutOpen;
@@ -238,7 +238,7 @@
           {#each uiLabels as {label, name, icon}}
           <SidebarItem
               on:press={() => {
-                updateActiveLink({label});
+                updateActiveLink(uiLabels.label);
               }}
               class={segment === 'ui' && activeLink === {label} ? 'active' : ''}
               href="ui/{name}"
