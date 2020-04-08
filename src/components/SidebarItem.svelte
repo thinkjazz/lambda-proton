@@ -3,7 +3,7 @@
 
   const dispatch = createEventDispatcher();
 
-  export let text = "какой-то массив даных";
+  export let text = "";
   export let href = "javascript:void(0)";
   export let leftIcon = false;
   export let rightIcon = false;

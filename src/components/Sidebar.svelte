@@ -15,11 +15,11 @@
   let isPageOpen = false;
   let isAuthenticationOpen = false;
   let isErrorOpen = false;
-  let isUiOpen = false;
+  let isUiOpen = true;
   let activeLink = "Панель";
   let footerName = "λproton boy";
   let footerText = "Вы вошли как:";
-  let uiLabels = [
+  let  uiLabels = [
     { label: "Alerts", name: "alerts", icon: "fas fa-exclamation-triangle"},
     { label: "Badge", name:"badge", icon: "fas fa-certificate"},
     { label: "Breadcrumb", name:"breadcrumb", icon:"fas fa-ellipsis-h"},
@@ -51,10 +51,6 @@
 
   const updateActiveLink = (linkName) => (activeLink = linkName);
 
-  const toggleUi = () => {
-    isUiOpen = !isUiOpen;
-    if (isPageOpen === true) isPageOpen = false;
-  };
 
   const toggleLayout = () => {
     isLayoutOpen = !isLayoutOpen;
@@ -69,6 +65,10 @@
       isErrorOpen = false;
     }
   };
+  const toggleUi = () => {
+    isUiOpen = !isUiOpen;
+    if (isUiOpen === true) isUiOpen = false;
+  };
 
   const toggleAuthentication = () => {
     isAuthenticationOpen = !isAuthenticationOpen;
@@ -79,6 +79,7 @@
     isErrorOpen = !isErrorOpen;
     if (isAuthenticationOpen === true) isAuthenticationOpen = false;
   };
+
 </script>
 
 <div id="layoutSidenav_nav" class="l-proton-nav-fixed">
@@ -237,20 +238,16 @@
           {#each uiLabels as {label, name, icon}}
           <SidebarItem
               on:press={() => {
-                updateActiveLink(label);
+                updateActiveLink({label});
               }}
-              class={segment === 'ui' && activeLink === 'label' ? 'active' : ''}
+              class={segment === 'ui' && activeLink === {label} ? 'active' : ''}
               href="ui/{name}"
               text={label}>
-     
           </SidebarItem>   
             {/each}
-
           </Nav>
         </Collapse>
-
       </Nav>
-
     </div>
     <div class="l-proton-sidenav-footer">
       <div class="small">{footerText}</div>
