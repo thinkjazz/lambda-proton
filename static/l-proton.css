@@ -11112,7 +11112,7 @@ body {
 
 .l-proton-sidenav .l-proton-sidenav-menu .nav .l-proton-sidenav-menu-heading {
     padding: 1.75rem 1rem 0.75rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -11126,7 +11126,7 @@ body {
 }
 
 .l-proton-sidenav .l-proton-sidenav-menu .nav .nav-link .l-proton-nav-link-icon {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
 }
 
 .l-proton-sidenav .l-proton-sidenav-menu .nav .nav-link .l-proton-sidenav-collapse-arrow {
