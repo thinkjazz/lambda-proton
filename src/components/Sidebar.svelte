@@ -4,7 +4,7 @@
   import Nav from "sveltestrap/src/Nav.svelte";
   //Импортируем SidebarItem
   import SidebarItem from "./SidebarItem.svelte";
-  //segment есть переменная для хранения состояния элеменат меню и проверка для подрузки в сайдбар
+  //segment есть переменная для хранения состояния элемента меню и проверка для подрузки в сайдбар
   export let segment;
   //theme переменная для хранения состояния темы
   export let theme;
@@ -15,42 +15,47 @@
   let isPageOpen = false;
   let isAuthenticationOpen = false;
   let isErrorOpen = false;
-  let isUiOpen = true;
+  let isUiOpen = false;
   let activeLink = "Панель";
   let footerName = "λproton boy";
   let footerText = "Вы вошли как:";
-  let  uiLabels = [
-    { label: "Alerts", name: "alerts", icon: "fas fa-exclamation-triangle"},
-    { label: "Badge", name:"badge", icon: "fas fa-certificate"},
-    { label: "Breadcrumb", name:"breadcrumb", icon:"fas fa-ellipsis-h"},
-    { label: "Buttons", name:"buttons", icon:"fas fa-angle-double-right"},
-    { label: "Button group", name:"buttonGroup", icon:""},
-    { label: "Card", name:"card", icon:""},
-    { label: "Carousel", name:"carousel", icon:""},
-    { label: "Collapse", name:"collapse", icon:""},
-    { label: "Custom Inputs", name:"customInputs", icon:""},
-    { label: "Dropdowns", name:"dropdowns", icon:""},
-    { label: "Forms", name:"forms", icon:""},
-    { label: "Grid", name: "grid", icon: "fas fa-exclamation-triangle"},
-    { label: "Input", name: "input", icon: "fas fa-exclamation-triangle"},
-    { label: "Input group", name:"inputGroup", icon:""},
-    { label: "Jumbotron", name:"jumbotron", icon:""},
-    { label: "List group", name:"listGroup", icon:""},
-    { label: "Media object", name:"mediaObject", icon:""},
-    { label: "Modal", name:"modal", icon:""},
-    { label: "Navs", name:"navs", icon:""},
-    { label: "Navbar", name:"navbar", icon:""},
-    { label: "Pagination", name:"pagination", icon:""},
-    { label: "Popovers", name:"popovers", icon:""},
-    { label: "Progress", name:"progress", icon:""},
-    { label: "Scrollspy", name:"scrollspy", icon:""},
-    { label: "Spinners", name:"spinners", icon:""},
-    { label: "Toasts", name:"toasts", icon:""},
-    { label: "Tooltips", name:"tooltips", icon:""}
+  let uiLabels = [
+    { id: 1, label: "Alerts", name: "alerts", icon: "fas fa-exclamation-triangle"},
+    { id: 2, label: "Badge", name:"badge", icon: "fas fa-certificate"},
+    { id: 3, label: "Breadcrumb", name:"breadcrumb", icon:"fas fa-ellipsis-h"},
+    { id: 4, label: "Buttons", name:"buttons", icon:"fas fa-angle-double-right"},
+    { id: 5, label: "Button group", name:"buttonGroup", icon:""},
+    { id: 6, label: "Card", name:"card", icon:""},
+    { id: 7, label: "Carousel", name:"carousel", icon:""},
+    { id: 8, label: "Collapse", name:"collapse", icon:""},
+    { id: 9, label: "Custom Inputs", name:"customInputs", icon:""},
+    { id: 10, label: "Dropdowns", name:"dropdowns", icon:""},
+    { id: 11, label: "Forms", name:"forms", icon:""},
+    { id: 12, label: "Grid", name: "grid", icon: "fas fa-exclamation-triangle"},
+    { id: 13, label: "Input", name: "input", icon: "fas fa-exclamation-triangle"},
+    { id: 14, label: "Input group", name:"inputGroup", icon:""},
+    { id: 15, label: "Jumbotron", name:"jumbotron", icon:""},
+    { id: 16, label: "List group", name:"listGroup", icon:""},
+    { id: 17, label: "Media object", name:"mediaObject", icon:""},
+    { id: 18, label: "Modal", name:"modal", icon:""},
+    { id: 19, label: "Navs", name:"navs", icon:""},
+    { id: 20, label: "Navbar", name:"navbar", icon:""},
+    { id: 21, label: "Pagination", name:"pagination", icon:""},
+    { id: 22, label: "Popovers", name:"popovers", icon:""},
+    { id: 23, label: "Progress", name:"progress", icon:""},
+    { id: 24, label: "Scrollspy", name:"scrollspy", icon:""},
+    { id: 25, label: "Spinners", name:"spinners", icon:""},
+    { id: 26, label: "Toasts", name:"toasts", icon:""},
+    { id: 27, label: "Tooltips", name:"tooltips", icon:""}
   ];
 
   const updateActiveLink = (linkName) => (activeLink = linkName);
 
+
+  const toggleUi = () => {
+    isUiOpen = !isUiOpen;
+    if (isLayoutOpen === true) isLayoutOpen = false;
+  };
 
   const toggleLayout = () => {
     isLayoutOpen = !isLayoutOpen;
@@ -64,10 +69,6 @@
       isAuthenticationOpen = false;
       isErrorOpen = false;
     }
-  };
-  const toggleUi = () => {
-    isUiOpen = !isUiOpen;
-    if (isUiOpen === true) isUiOpen = false;
   };
 
   const toggleAuthentication = () => {
@@ -101,6 +102,33 @@
         </SidebarItem>
 
         <div class="l-proton-sidenav-menu-heading">Интерфейс</div>
+
+        
+        <SidebarItem
+          on:press={toggleUi}
+          class={!isUiOpen ? 'collapsed' : ''}
+          text="UI элементы"
+          leftIcon
+          rightIcon>
+
+          <i class="fas fa-grip-horizontal" slot="leftIcon" />
+          <i class="fas fa-angle-down" slot="rightIcon" />
+        </SidebarItem>
+        <Collapse isOpen={isUiOpen}>
+          <Nav class="l-proton-sidenav-menu-nested">
+          {#each uiLabels as {id, label, name, icon}}
+          <SidebarItem
+              on:press={() => {
+                updateActiveLink(name);
+              }}
+              class={segment === 'ui' && activeLink === name ? 'active' : ''}
+              href="ui/{name}"
+              text={label}>
+          </SidebarItem>   
+            {/each}
+          </Nav>
+        </Collapse>
+
 
         <SidebarItem
           on:press={toggleLayout}
@@ -223,30 +251,6 @@
           <i class="fas fa-table" slot="leftIcon" />
         </SidebarItem>
 
-        <SidebarItem
-          on:press={toggleUi}
-          class={!isUiOpen ? 'collapsed' : ''}
-          text="UI"
-          leftIcon
-          rightIcon>
-
-          <i class="fas fa-grip-horizontal" slot="leftIcon" />
-          <i class="fas fa-angle-down" slot="rightIcon" />
-        </SidebarItem>
-        <Collapse isOpen={isUiOpen}>
-          <Nav class="l-proton-sidenav-menu-nested">
-          {#each uiLabels as {label, name, icon}}
-          <SidebarItem
-              on:press={() => {
-                updateActiveLink(uiLabels.label);
-              }}
-              class={segment === 'ui' && activeLink === {label} ? 'active' : ''}
-              href="ui/{name}"
-              text={label}>
-          </SidebarItem>   
-            {/each}
-          </Nav>
-        </Collapse>
       </Nav>
     </div>
     <div class="l-proton-sidenav-footer">
