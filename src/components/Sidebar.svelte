@@ -50,7 +50,7 @@
   ];
 
   const updateActiveLink = (linkName) => (activeLink = linkName);
-  const updateActiveLinkFromArray = (linkItem) => (activeLink = uiLabels.forEach());
+
 
   const toggleLayout = () => {
     isLayoutOpen = !isLayoutOpen;
