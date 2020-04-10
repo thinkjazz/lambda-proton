@@ -2,6 +2,7 @@
   "name": "lambda-proton",
   "description": "lambda-proton",
   "version": "1.0.1",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/",}
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
