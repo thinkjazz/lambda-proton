@@ -7280,125 +7280,168 @@ const Sidebar = create_ssr_component(($$result, $$props, $$bindings, $$slots) =>
 	let isPageOpen = false;
 	let isAuthenticationOpen = false;
 	let isErrorOpen = false;
-	let isUiOpen = true;
+	let isUiOpen = false;
 	let activeLink = "Панель";
 
 	let uiLabels = [
 		{
+			id: 1,
 			label: "Alerts",
 			name: "alerts",
 			icon: "fas fa-exclamation-triangle"
 		},
 		{
+			id: 2,
 			label: "Badge",
 			name: "badge",
 			icon: "fas fa-certificate"
 		},
 		{
+			id: 3,
 			label: "Breadcrumb",
 			name: "breadcrumb",
 			icon: "fas fa-ellipsis-h"
 		},
 		{
+			id: 4,
 			label: "Buttons",
 			name: "buttons",
 			icon: "fas fa-angle-double-right"
 		},
 		{
+			id: 5,
 			label: "Button group",
 			name: "buttonGroup",
 			icon: ""
 		},
-		{ label: "Card", name: "card", icon: "" },
 		{
+			id: 6,
+			label: "Card",
+			name: "card",
+			icon: ""
+		},
+		{
+			id: 7,
 			label: "Carousel",
 			name: "carousel",
 			icon: ""
 		},
 		{
+			id: 8,
 			label: "Collapse",
 			name: "collapse",
 			icon: ""
 		},
 		{
+			id: 9,
 			label: "Custom Inputs",
 			name: "customInputs",
 			icon: ""
 		},
 		{
+			id: 10,
 			label: "Dropdowns",
 			name: "dropdowns",
 			icon: ""
 		},
-		{ label: "Forms", name: "forms", icon: "" },
 		{
+			id: 11,
+			label: "Forms",
+			name: "forms",
+			icon: ""
+		},
+		{
+			id: 12,
 			label: "Grid",
 			name: "grid",
 			icon: "fas fa-exclamation-triangle"
 		},
 		{
+			id: 13,
 			label: "Input",
 			name: "input",
 			icon: "fas fa-exclamation-triangle"
 		},
 		{
+			id: 14,
 			label: "Input group",
 			name: "inputGroup",
 			icon: ""
 		},
 		{
+			id: 15,
 			label: "Jumbotron",
 			name: "jumbotron",
 			icon: ""
 		},
 		{
+			id: 16,
 			label: "List group",
 			name: "listGroup",
 			icon: ""
 		},
 		{
+			id: 17,
 			label: "Media object",
 			name: "mediaObject",
 			icon: ""
 		},
-		{ label: "Modal", name: "modal", icon: "" },
-		{ label: "Navs", name: "navs", icon: "" },
 		{
+			id: 18,
+			label: "Modal",
+			name: "modal",
+			icon: ""
+		},
+		{
+			id: 19,
+			label: "Navs",
+			name: "navs",
+			icon: ""
+		},
+		{
+			id: 20,
 			label: "Navbar",
 			name: "navbar",
 			icon: ""
 		},
 		{
+			id: 21,
 			label: "Pagination",
 			name: "pagination",
 			icon: ""
 		},
 		{
+			id: 22,
 			label: "Popovers",
 			name: "popovers",
 			icon: ""
 		},
 		{
+			id: 23,
 			label: "Progress",
 			name: "progress",
 			icon: ""
 		},
 		{
+			id: 24,
 			label: "Scrollspy",
 			name: "scrollspy",
 			icon: ""
 		},
 		{
+			id: 25,
 			label: "Spinners",
 			name: "spinners",
 			icon: ""
 		},
 		{
+			id: 26,
 			label: "Toasts",
 			name: "toasts",
 			icon: ""
 		},
 		{
+			id: 27,
 			label: "Tooltips",
 			name: "tooltips",
 			icon: ""
@@ -7441,6 +7484,49 @@ const Sidebar = create_ssr_component(($$result, $$props, $$bindings, $$slots) =>
 				)}
 
         <div class="${"l-proton-sidenav-menu-heading"}">Интерфейс</div>
+
+        
+        ${validate_component(SidebarItem, "SidebarItem").$$render(
+					$$result,
+					{
+						class:  "collapsed" ,
+						text: "UI элементы",
+						leftIcon: true,
+						rightIcon: true
+					},
+					{},
+					{
+						leftIcon: () => `<i class="${"fas fa-grip-horizontal"}" slot="${"leftIcon"}"></i>`,
+						rightIcon: () => `<i class="${"fas fa-angle-down"}" slot="${"rightIcon"}"></i>`,
+						default: () => `
+
+          
+          
+        `
+					}
+				)}
+        ${validate_component(Collapse, "Collapse").$$render($$result, { isOpen: isUiOpen }, {}, {
+					default: () => `
+          ${validate_component(Nav, "Nav").$$render($$result, { class: "l-proton-sidenav-menu-nested" }, {}, {
+						default: () => `
+          ${each(uiLabels, ({ id, label, name, icon }) => `${validate_component(SidebarItem, "SidebarItem").$$render(
+							$$result,
+							{
+								class: segment === "ui" && activeLink === name ? "active" : "",
+								href: "ui/" + name,
+								text: label
+							},
+							{},
+							{
+								default: () => `
+          `
+							}
+						)}`)}
+          `
+					})}
+        `
+				})}
+
 
         ${validate_component(SidebarItem, "SidebarItem").$$render(
 					$$result,
@@ -7664,48 +7750,6 @@ const Sidebar = create_ssr_component(($$result, $$props, $$bindings, $$slots) =>
 					}
 				)}
 
-        ${validate_component(SidebarItem, "SidebarItem").$$render(
-					$$result,
-					{
-						class:  "",
-						text: "UI",
-						leftIcon: true,
-						rightIcon: true
-					},
-					{},
-					{
-						leftIcon: () => `<i class="${"fas fa-grip-horizontal"}" slot="${"leftIcon"}"></i>`,
-						rightIcon: () => `<i class="${"fas fa-angle-down"}" slot="${"rightIcon"}"></i>`,
-						default: () => `
-
-          
-          
-        `
-					}
-				)}
-        ${validate_component(Collapse, "Collapse").$$render($$result, { isOpen: isUiOpen }, {}, {
-					default: () => `
-          ${validate_component(Nav, "Nav").$$render($$result, { class: "l-proton-sidenav-menu-nested" }, {}, {
-						default: () => `
-          ${each(uiLabels, ({ label, name, icon }) => `${validate_component(SidebarItem, "SidebarItem").$$render(
-							$$result,
-							{
-								class: segment === "ui" && activeLink === { label }
-								? "active"
-								: "",
-								href: "ui/" + name,
-								text: label
-							},
-							{},
-							{
-								default: () => `
-          `
-							}
-						)}`)}
-          `
-					})}
-        `
-				})}
       `
 			})}
     </div>
