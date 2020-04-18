@@ -12,59 +12,59 @@
     import  CardText from "sveltestrap/src/CardText.svelte"
     import  CardSubtitle from "sveltestrap/src/CardSubtitle.svelte";
 
-    let title = "Карточки | UI | Пользовательский Интерфейс";
+    let title = "Cards | UI ";
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Карточки</h1>
+<h1 class="mt-4">Cards</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Карточки</BreadcrumbItem>
+    <BreadcrumbItem active>Cards</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Карточки</h2>
-        <h4 class="mt-4">Пример</h4>
+        <h2 class="mt-4">Cards</h2>
+        <h4 class="mt-4">Example</h4>
         <Card>
-            <CardBody>Привет, Мир!</CardBody>
+            <CardBody>Hello, World!</CardBody>
         </Card>
     </div>
     <div class="col-xl-6">
-        <h2 class="mt-4">Сокращенная запись</h2>
-        <h4 class="mt-4">Пример</h4>
-        <Card body>Прощай жестокий мир</Card>
+        <h2 class="mt-4">Short record</h2>
+        <h4 class="mt-4">Example</h4>
+        <Card body>Goodbye brutal World</Card>
     </div>
  </Row>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Хедер и Футер</h2>
-        <h4 class="mt-4">Пример</h4>
+        <h2 class="mt-4">Header and Footer</h2>
+        <h4 class="mt-4">Example</h4>
         <Card class="mb-3">
             <CardHeader>
-                <CardTitle>Заголовок</CardTitle>
+                <CardTitle>Card Title</CardTitle>
             </CardHeader>
             <CardBody>
-                <CardSubtitle>Подзаголовок карточки</CardSubtitle>
+                <CardSubtitle>Card Subtitle</CardSubtitle>
                 <CardText>
-                    Быстрый пример текста для построения на заголовке карточки
-                    и составляют большую часть содержимого карточки.
+                    Quick example text to build on the header of the card
+                    and make up most of the contents of the card.
                 </CardText>
-                <Button>Кнопка</Button>
+                <Button>Button</Button>
             </CardBody>
-            <CardFooter>Футер</CardFooter>
+            <CardFooter>Footer</CardFooter>
         </Card>
     </div>
     <div class="col-xl-6">
-        <h2 class="mt-4">Цвета в карточках</h2>
-        <h4 class="mt-4">Пример</h4>
-        <Card body color="primary" inverse class="mb-3">Основной</Card>
-        <Card body color="secondary" class="mb-3 text-white">Вторичный</Card>
-        <Card body color="success" class="mb-3">Успешный</Card>
-        <Card body color="danger" class="mb-3 text-white">Опасность</Card>
-        <Card body color="warning" class="mb-3">Предупреждение</Card>
-        <Card body color="info" class="mb-3 text-white">Инфо</Card>
-        <Card body color="dark" inverse class="mb-3">Тёмный</Card>
-        <Card body color="light" class="mb-3">Светлый</Card>
+        <h2 class="mt-4">Colors in cards</h2>
+        <h4 class="mt-4">Example</h4>
+        <Card body color="primary" inverse class="mb-3">Primary</Card>
+        <Card body color="secondary" class="mb-3 text-white">Secondary</Card>
+        <Card body color="success" class="mb-3">Success</Card>
+        <Card body color="danger" class="mb-3 text-white">Danger</Card>
+        <Card body color="warning" class="mb-3">Warning</Card>
+        <Card body color="info" class="mb-3 text-white">Info</Card>
+        <Card body color="dark" inverse class="mb-3">Dark</Card>
+        <Card body color="light" class="mb-3">Light</Card>
     </div>
 </Row>
