@@ -5,38 +5,38 @@
 
 
 
-    let title = "Хлебные крошки | UI | Пользовательский интерфейс";
+    let title = "Breadcrumb | UI";
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Хлебные крошки</h1>
+<h1 class="mt-4">Breadcrumb</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Хлебные крошки</BreadcrumbItem>
+    <BreadcrumbItem active>Breadcrumb</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Хлебные крошки</h2>
+        <h2 class="mt-4">Breadcrumb</h2>
         <Breadcrumb>
-            <BreadcrumbItem active>Домой</BreadcrumbItem>
+            <BreadcrumbItem active>Home</BreadcrumbItem>
         </Breadcrumb>
 
         <Breadcrumb>
             <BreadcrumbItem>
-                <a href="#home">Домой</a>
+                <a href="#home">Home</a>
             </BreadcrumbItem>
-            <BreadcrumbItem active>Библиотека</BreadcrumbItem>
+            <BreadcrumbItem active>Library</BreadcrumbItem>
         </Breadcrumb>
 
         <Breadcrumb>
             <BreadcrumbItem>
-                <a href="#home">Домой</a>
+                <a href="#home">Home</a>
             </BreadcrumbItem>
             <BreadcrumbItem>
-                <a href="#library">Библиотека</a>
+                <a href="#library">Library</a>
             </BreadcrumbItem>
-            <BreadcrumbItem active>Данные</BreadcrumbItem>
+            <BreadcrumbItem active>Data</BreadcrumbItem>
         </Breadcrumb>
     </div>
 </Row>

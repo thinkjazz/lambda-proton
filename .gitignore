@@ -5,5 +5,5 @@ yarn-error.log
 /cypress/screenshots/
 .idea
 
-
+__sapper__
 .now

@@ -16,23 +16,23 @@
     ];
 
 
-    let title = "Группы кнопок | UI | Пользовательский Интерфейс";
+    let title = "Button group | UI";
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Группы кнопок</h1>
+<h1 class="mt-4">ГButton group</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Группы кнопок</BreadcrumbItem>
+    <BreadcrumbItem active>Button group</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Группы кнопок</h2>
+        <h2 class="mt-4">Button group</h2>
         <ButtonGroup>
-            <Button active>Альфа</Button>
-            <Button>Браво</Button>
-            <Button>Чарли</Button>
+            <Button active>Alfa</Button>
+            <Button>Beta</Button>
+            <Button>Gamma</Button>
         </ButtonGroup>
     </div>
 </Row>

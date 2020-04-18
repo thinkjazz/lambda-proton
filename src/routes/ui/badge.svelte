@@ -15,37 +15,37 @@
         "light",
         "dark"
     ];
-    let title = "Значки | UI | Пользовательский интерфейс";
+    let title = "Badges | UI";
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Значки</h1>
+<h1 class="mt-4">Badges</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Значки</BreadcrumbItem>
+    <BreadcrumbItem active>Badges</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Пример</h2>
-        <h1>Заголовок <Badge color="success">Новый</Badge></h1>
-        <h2>Заголовок <Badge color="warning" >Новый</Badge></h2>
-        <h3>Заголовок <Badge color="danger" >Новый</Badge></h3>
-        <h4>Заголовок <Badge>Новый</Badge></h4>
-        <h5>Заголовок <Badge>Новый</Badge></h5>
-        <h6>Заголовок <Badge>Новый</Badge></h6>
+        <h2 class="mt-4">Example</h2>
+        <h1>Heading  <Badge color="success">New</Badge></h1>
+        <h2>Heading <Badge color="warning" >New</Badge></h2>
+        <h3>Heading <Badge color="danger" >New</Badge></h3>
+        <h4>Heading <Badge>New</Badge></h4>
+        <h5>Heading <Badge>New</Badge></h5>
+        <h6>Heading <Badge>New</Badge></h6>
     </div>
     <div class="col-xl-6">
-        <h2 class="mt-4">Уведомление</h2>
-        <h4 class="mt-4">Пример</h4>
+            <h2 class="mt-4">Notification</h2>
+        <h4 class="mt-4">Example</h4>
         <Button color="primary" outline>
-            Уведомление <Badge color="secondary">4</Badge>
+            Notification <Badge color="secondary">4</Badge>
         </Button>
     </div>
     <div class="col-xl-6">
 
-        <h2 class="mt-4">Цвета</h2>
-        <h4 class="mt-4">Пример</h4>
+        <h2 class="mt-4">Color</h2>
+        <h4 class="mt-4">Example</h4>
         {#each colors as color}
             <div>
                 <Badge {color}>
@@ -55,8 +55,8 @@
         {/each}
     </div>
     <div class="col-xl-6">
-        <h2 class="mt-4">Округлые значки</h2>
-        <h4 class="mt-4">Пример</h4>
+        <h2 class="mt-4">Round badges</h2>
+        <h4 class="mt-4">Example</h4>
         {#each colors as color}
             <div>
                 <Badge pill {color}>
@@ -68,16 +68,16 @@
 </Row>
   <Row>
       <div class="col-xl-12">
-          <h2 class="mt-4">Цветные значки</h2>
-          <h4 class="mt-4">Пример</h4>
-          <Badge href="#" color="primary">Основной</Badge>
-          <Badge href="#" color="secondary">Вторичный</Badge>
-          <Badge href="#" color="success">Успешно</Badge>
-          <Badge href="#" color="danger">Опасность</Badge>
-          <Badge href="#" color="warning">Предупреждение</Badge>
-          <Badge href="#" color="info">Информация</Badge>
-          <Badge href="#" color="light">Светлый</Badge>
-          <Badge href="#" color="dark">Тёмный</Badge>
+          <h2 class="mt-4">Color badges</h2>
+          <h4 class="mt-4">Example</h4>
+          <Badge href="#" color="primary">Primary</Badge>
+          <Badge href="#" color="secondary">Secondary</Badge>
+          <Badge href="#" color="success">Success</Badge>
+          <Badge href="#" color="danger">Danger</Badge>
+          <Badge href="#" color="warning">Warning</Badge>
+          <Badge href="#" color="info">Info</Badge>
+          <Badge href="#" color="light">Light</Badge>
+          <Badge href="#" color="dark">Dark</Badge>
       </div>
   </Row>
 

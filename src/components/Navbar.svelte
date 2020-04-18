@@ -36,7 +36,7 @@
           type="search"
           name="search"
           id="exampleSearch"
-          placeholder="Искать.." />
+          placeholder="Search.." />
         <InputGroupAddon addonType={'append'}>
           <Button color="primary" on:click={searchHandle}>
             <i class="fas fa-search" />
@@ -52,15 +52,15 @@
         <DropdownMenu right>
           <DropdownItem>         
      
-          <a class="dropdown-item" href="settings"><i class="fas fa-cog" /> Настройки</a>
+          <a class="dropdown-item" href="settings"><i class="fas fa-cog" /> Settings</a>
           </DropdownItem>
           <DropdownItem>
-            <a class="dropdown-item" href="activity_log"><i class="fas fa-clipboard-list" /> Активность</a>
+            <a class="dropdown-item" href="activity_log"><i class="fas fa-clipboard-list" /> Activity</a>
           </DropdownItem>
           <DropdownItem divider />
           <DropdownItem>
             <a class="dropdown-item" href="pages/authentication/login">
-            <i class="fas fa-sign-out-alt"></i>  Выйти
+            <i class="fas fa-sign-out-alt"></i>  Logout
             </a>
           </DropdownItem>
         </DropdownMenu>

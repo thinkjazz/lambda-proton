@@ -16,25 +16,25 @@
     ];
 
 
-    let title = "Оповещения | UI | Пользовательский интерфейс";
+    let title = "Alerts | UI ";
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Оповещения</h1>
+<h1 class="mt-4">Alerts</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Оповещения</BreadcrumbItem>
+    <BreadcrumbItem active>Alerts</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Оповещения</h2>
+        <h2 class="mt-4">Alerts</h2>
         {#each colors as color}
             <Alert {color}>
                 <h4 class="alert-heading text-capitalize">{color}</h4>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 <a href="#todo" class="alert-link">
-                    Кроме того, ссылки на оповещения цветные, чтобы соответствовать оповещению
+                    In addition, the links to the alerts are colored to match the alert
                 </a>.
             </Alert>
         {/each}

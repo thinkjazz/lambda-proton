@@ -1,11 +1,11 @@
 <script>
   import Table from "sveltestrap/src/Table.svelte";
 
-  const tableHeading = ["№", "Имя", "Фамилия", "юзернейм"];
+  const tableHeading = ["#", "First name ", "Last name", "Username"];
   const tableData = [
     { SNo: "1", firstName: "PipBoy", lastName: "3000", userName: "@mdo" },
     { SNo: "2", firstName: "Gordon", lastName: "Freeman", userName: "@fat" },
-    { SNo: "3", firstName: "Goul", lastName: "Гладкокожий", userName: "@twitter" }
+    { SNo: "3", firstName: "Goulh", lastName: "Vaultboy13", userName: "@twitter" }
   ];
 </script>
 
