@@ -1,5 +1,5 @@
 <script>
-    let title = "Коллапсер | UI | Пользовательский Интерфейс";
+    let title = "Collapse | UI";
     import  Breadcrumb  from "sveltestrap/src/Breadcrumb.svelte";
     import  BreadcrumbItem  from "sveltestrap/src/BreadcrumbItem.svelte";
     import  Row  from "sveltestrap/src/Row.svelte";
