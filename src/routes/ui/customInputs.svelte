@@ -1,5 +1,5 @@
 <script>
-    let title = "Настраиваемые вводы | UI | Пользовательский Интерфейс";
+    let title = "Custom Input | UI";
     import  Breadcrumb  from "sveltestrap/src/Breadcrumb.svelte";
     import  BreadcrumbItem  from "sveltestrap/src/BreadcrumbItem.svelte";
     import  Row  from "sveltestrap/src/Row.svelte";
@@ -15,46 +15,46 @@
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Настраиваемые вводы</h1>
+<h1 class="mt-4">Custom Input</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Настраиваемые вводы</BreadcrumbItem>
+    <BreadcrumbItem active>Custom Input</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Настраиваемые вводы</h2>
+        <h2 class="mt-4">Custom Input</h2>
 <Form>
     <FormGroup>
-        <Label for="exampleCheckbox">Чекбоксы</Label>
+        <Label for="exampleCheckbox">Checkbox</Label>
         <div>
             <CustomInput
                     type="checkbox"
                     id="exampleCustomCheckbox"
-                    label="Отметьте этот пользовательский флажок" />
+                    label="Click this custom checkbox." />
             <CustomInput
                     type="checkbox"
                     id="exampleCustomCheckbox2"
-                    label="Или этот" />
+                    label="Or this one." />
             <CustomInput
                     type="checkbox"
                     id="exampleCustomCheckbox3"
-                    label="Но не этот, он неактивный."
+                    label="But not this one, he's inactive."
                     disabled />
             <CustomInput
                     type="checkbox"
                     id="exampleCustomCheckbox4"
-                    label="Не могу нажать на эту этикетку, чтобы проверить!"
+                    label="I can't click on this label to check!"
                     htmlFor="exampleCustomCheckbox4_X"
                     disabled />
         </div>
             </FormGroup>
     <FormGroup>
-        <Label for="exampleCheckbox">Радио-кнопки</Label>
+        <Label for="exampleCheckbox">Radio Buttons</Label>
         <div>
             <CustomInput
                     type="radio"
                     id="exampleCustomRadio"
                     name="customRadio"
-                    label="Выберите эту кастомную радио-кнопку" />
+                    label="Choose this custom radio button." />
             <CustomInput
                     type="radio"
                     id="exampleCustomRadio2"
@@ -74,7 +74,7 @@
         </div>
     </FormGroup>
     <FormGroup>
-        <Label for="exampleCheckbox">Переключатели</Label>
+        <Label for="exampleCheckbox">Checkbox</Label>
         <div>
             <CustomInput
                     type="switch"

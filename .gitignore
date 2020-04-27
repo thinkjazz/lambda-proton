@@ -4,6 +4,6 @@
 yarn-error.log
 /cypress/screenshots/
 .idea
-
+bash.exe.stackdump
 __sapper__
 .now
