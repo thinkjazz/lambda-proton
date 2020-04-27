@@ -115,29 +115,29 @@
         </div>
     </FormGroup>
     <FormGroup>
-        <Label for="exampleCustomSelect">Пользовательский выбор</Label>
+        <Label for="exampleCustomSelect">Custom select</Label>
         <CustomInput type="select" id="exampleCustomSelect" name="customSelect">
-            <option value="">Выбери себе</option>
-            <option>Кошачий шампунь от блох</option>
-            <option>Глобус Тайваня</option>
-            <option>Северокорейский паспорт</option>
-            <option>Коробка люминесцентных презервативов (секондхенд)</option>
-            <option>Вставная челюсть</option>
+            <option value="">Take your pick</option>
+            <option>Flea shampoo for cats</option>
+            <option>Taiwanese Globe</option>
+            <option>North Korean passport</option>
+            <option>Box of fluorescent condoms (secondhand)</option>
+            <option>injaw</option>
         </CustomInput>
     </FormGroup>
             <FormGroup>
-                <Label for="exampleCustomMutlipleSelect">Пользовательский множественный выбор</Label>
+                <Label for="exampleCustomMutlipleSelect">Custom multiply select</Label>
                 <CustomInput
                         type="select"
                         id="exampleCustomMutlipleSelect"
                         name="customSelect"
                         multiple>
-                    <option value="">Выбери себе</option>
-                    <option>Кошачий шампунь от блох</option>
-                    <option>Глобус Тайваня</option>
-                    <option>Северокорейский паспорт</option>
-                    <option>Коробка люминесцентных презервативов (секондхенд)</option>
-                    <option>Вставная челюсть</option>
+                    <option value="">Take your pick</option>
+                    <option>Flea shampoo for cats</option>
+                    <option>Taiwanese Globe</option>
+                    <option>North Korean passport</option>
+                    <option>Box of fluorescent condoms (secondhand)</option>
+                    <option>injaw</option>
                 </CustomInput>
             </FormGroup>
             <FormGroup>
