@@ -59,16 +59,16 @@
                     type="radio"
                     id="exampleCustomRadio2"
                     name="customRadio"
-                    label="Или эту" />
+                    label="And this" />
             <CustomInput
                     type="radio"
                     id="exampleCustomRadio3"
-                    label="Но не эту, она неактивна"
+                    label="But not that, cuz it's disable"
                     disabled />
             <CustomInput
                     type="radio"
                     id="exampleCustomRadio4"
-                    label="Нельзя нажать на эту метку, чтобы выбрать!"
+                    label="I can't click on this label to check!"
                     htmlFor="exampleCustomRadio4_X"
                     disabled />
         </div>
@@ -80,21 +80,21 @@
                     type="switch"
                     id="exampleCustomSwitch"
                     name="customSwitch"
-                    label="Включите этот настраиваемый переключатель" />
+                    label="Turn on this adjustable switch." />
             <CustomInput
                     type="switch"
                     id="exampleCustomSwitch2"
                     name="customSwitch"
-                    label="Или этот" />
+                    label="Or this one." />
             <CustomInput
                     type="switch"
                     id="exampleCustomSwitch3"
-                    label="Но только не этот, он того"
+                    label="But not this one, it's the one."
                     disabled />
             <CustomInput
                     type="switch"
                     id="exampleCustomSwitch4"
-                    label="Нельзя нажать на эту метку, чтобы включить!"
+                    label="You can't press that mark to turn it on!"
                     htmlFor="exampleCustomSwitch4_X"
                     disabled />
         </div>
