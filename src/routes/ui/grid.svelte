@@ -8,19 +8,19 @@
 
 
 
-    let title = "Макеты и сетки | UI | Пользовательский Интерфейс";
+    let title = "Grid | UI";
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Макеты и сетки</h1>
+<h1 class="mt-4">Grid</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Макеты и сетки</BreadcrumbItem>
+    <BreadcrumbItem active>Grid</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Макеты и сетки</h2>
+        <h2 class="mt-4">Grid</h2>
         <Container>
             <Row>
                 <Col><code>.col</code></Col>
