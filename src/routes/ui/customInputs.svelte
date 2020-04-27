@@ -141,23 +141,23 @@
                 </CustomInput>
             </FormGroup>
             <FormGroup>
-                <Label for="exampleCustomSelectDisabled">Пользовательский Выбор Отключено</Label>
+                <Label for="exampleCustomSelectDisabled">Custom Select Disabled</Label>
                 <CustomInput
                         type="select"
                         id="exampleCustomSelectDisabled"
                         name="customSelect"
                         disabled>
-                    <option value="">Выбери себе</option>
-                    <option>Кошачий шампунь от блох</option>
-                    <option>Глобус Тайваня</option>
-                    <option>Северокорейский паспорт</option>
-                    <option>Коробка люминесцентных презервативов (секондхенд)</option>
-                    <option>Вставная челюсть</option>
+                    <option value="">Take your pick</option>
+                    <option>Flea shampoo for cats</option>
+                    <option>Taiwanese Globe</option>
+                    <option>North Korean passport</option>
+                    <option>Box of fluorescent condoms (secondhand)</option>
+                    <option>injaw</option>
                 </CustomInput>
             </FormGroup>
             <FormGroup>
                 <Label for="exampleCustomMutlipleSelectDisabled">
-                    Пользовательский Выбор множества Отключено
+                    Custom Mutliple Select Disabled
                 </Label>
                 <CustomInput
                         type="select"
@@ -165,20 +165,20 @@
                         name="customSelect"
                         multiple
                         disabled>
-                    <option value="">Выбери себе</option>
-                    <option>Кошачий шампунь от блох</option>
-                    <option>Глобус Тайваня</option>
-                    <option>Северокорейский паспорт</option>
-                    <option>Коробка люминесцентных презервативов (секондхенд)</option>
-                    <option>Вставная челюсть</option>
+                    <option value="">Take your pick</option>
+                    <option>Flea shampoo for cats</option>
+                    <option>Taiwanese Globe</option>
+                    <option>North Korean passport</option>
+                    <option>Box of fluorescent condoms (secondhand)</option>
+                    <option>injaw</option>
                 </CustomInput>
             </FormGroup>
             <FormGroup>
-                <Label for="exampleCustomFileBrowser">Файловый браузер</Label>
+                <Label for="exampleCustomFileBrowser">Custom File Browser</Label>
                 <CustomInput type="file" id="exampleCustomFileBrowser" name="customFile" />
             </FormGroup>
             <FormGroup>
-                <Label for="exampleCustomFileBrowser">Файловый браузер с пользовательской меткой</Label>
+                <Label for="exampleCustomFileBrowser">Custom File Browser with user's label</Label>
                 <CustomInput
                         type="file"
                         id="exampleCustomFileBrowser"
@@ -186,7 +186,7 @@
                         label="Эй, выбери файл!" />
             </FormGroup>
             <FormGroup>
-                <Label for="exampleCustomFileBrowser">Браузер файлов Отключен</Label>
+                <Label for="exampleCustomFileBrowser">File Browser Disable</Label>
                 <CustomInput
                         type="file"
                         id="exampleCustomFileBrowser"
