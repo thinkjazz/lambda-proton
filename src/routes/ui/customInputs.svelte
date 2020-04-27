@@ -100,17 +100,17 @@
         </div>
     </FormGroup>
     <FormGroup>
-        <Label for="exampleCheckbox">Инлайновые чекбоксы</Label>
+        <Label for="exampleCheckbox">Inline checkboxes</Label>
         <div>
             <CustomInput
                     type="checkbox"
                     id="exampleCustomInline"
-                    label="Встроенный специальный ввод"
+                    label="Built-in special input"
                     inline />
             <CustomInput
                     type="checkbox"
                     id="exampleCustomInline2"
-                    label="и ещё один"
+                    label="and one more"
                     inline />
         </div>
     </FormGroup>
