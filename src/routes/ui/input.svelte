@@ -1,5 +1,5 @@
 <script>
-    let title = "Инпуты и поля ввода | UI | Пользовательский Интерфейс";
+    let title = "Input and text area | UI";
     import  Breadcrumb  from "sveltestrap/src/Breadcrumb.svelte";
     import  BreadcrumbItem  from "sveltestrap/src/BreadcrumbItem.svelte";
     import  Row  from "sveltestrap/src/Row.svelte";
@@ -20,18 +20,18 @@
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Поле ввода Input</h1>
+<h1 class="mt-4">Input</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Поле ввода Input</BreadcrumbItem>
+    <BreadcrumbItem active>Input</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-12">
-        <h2 class="mt-4">Поле ввода</h2>
-        <h4 class="mt-4">Пример</h4>
+        <h2 class="mt-4">Input</h2>
+        <h4 class="mt-4">Example</h4>
     <Form>
         <FormGroup>
-            <Label for="exampleEmail">Простой текст (статический)</Label>
-            <Input plaintext value="Некоторый обычный текст/статическое значение" />
+            <Label for="exampleEmail">Plain text (static)</Label>
+            <Input plaintext value="Some plain text/static value." />
         </FormGroup>
         <FormGroup>
             <Label for="exampleEmail">Email</Label>
@@ -39,15 +39,15 @@
                     type="email"
                     name="email"
                     id="exampleEmail"
-                    placeholder="Введите почту" />
+                    placeholder="Enter your mail." />
         </FormGroup>
         <FormGroup>
-            <Label for="examplePassword">Пароль</Label>
+            <Label for="examplePassword">Password</Label>
             <Input
                     type="password"
                     name="password"
                     id="examplePassword"
-                    placeholder="Введите пароль" />
+                    placeholder="Enter password" />
         </FormGroup>
         <FormGroup>
             <Label for="exampleUrl">Url</Label>
@@ -55,58 +55,58 @@
                     type="url"
                     name="url"
                     id="exampleUrl"
-                    placeholder="введите url" />
+                    placeholder="Enter url" />
         </FormGroup>
         <FormGroup>
-            <Label for="exampleNumber">Номер</Label>
+            <Label for="exampleNumber">Number</Label>
             <Input
                     type="number"
                     name="number"
                     id="exampleNumber"
-                    placeholder="заполните номер" />
+                    placeholder="Fill in the number" />
         </FormGroup>
         <FormGroup>
-            <Label for="exampleDatetime">Сроки</Label>
+            <Label for="exampleDatetime">Datetime</Label>
             <Input
                     type="datetime"
                     name="datetime"
                     id="exampleDatetime"
-                    placeholder="Введите сроки" />
+                    placeholder="Enter datetime" />
         </FormGroup>
         <FormGroup>
-            <Label for="exampleDate">Дата</Label>
+            <Label for="exampleDate">Date</Label>
             <Input
                     type="date"
                     name="date"
                     id="exampleDate"
-                    placeholder="Введите дату" />
+                    placeholder="Enter the date." />
         </FormGroup>
         <FormGroup>
-            <Label for="exampleTime">Время</Label>
+            <Label for="exampleTime">Time</Label>
             <Input
                     type="time"
                     name="time"
                     id="exampleTime"
-                    placeholder="Введите время" />
+                    placeholder="Enter the time." />
         </FormGroup>
         <FormGroup>
-            <Label for="exampleColor">Цвет</Label>
+            <Label for="exampleColor">Color</Label>
             <Input
                     type="color"
                     name="color"
                     id="exampleColor"
-                    placeholder="Цветовой плейсхолдер" />
+                    placeholder="Color placeholder" />
         </FormGroup>
         <FormGroup>
-            <Label for="exampleSearch">Поиск</Label>
+            <Label for="exampleSearch">Search</Label>
             <Input
                     type="search"
                     name="search"
                     id="exampleSearch"
-                    placeholder="Введите запрос для поиска" />
+                    placeholder="Enter a search query" />
         </FormGroup>
         <FormGroup>
-            <Label for="exampleSelect">Выбор(Селектор)</Label>
+            <Label for="exampleSelect">Selection(selector)</Label>
             <Input type="select" name="select" id="exampleSelect">
                 <option>1</option>
                 <option>2</option>
@@ -116,7 +116,7 @@
             </Input>
         </FormGroup>
         <FormGroup>
-            <Label for="exampleSelectMulti">Выбор нескольких параметров</Label>
+            <Label for="exampleSelectMulti">Selection of several parameters</Label>
             <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
                 <option>1</option>
                 <option>2</option>
@@ -126,27 +126,27 @@
             </Input>
         </FormGroup>
         <FormGroup>
-            <Label for="exampleText">Текстовая область</Label>
+            <Label for="exampleText">Text area</Label>
             <Input type="textarea" name="text" id="exampleText" />
         </FormGroup>
         <FormGroup>
-            <Label for="exampleFile">Файл</Label>
+            <Label for="exampleFile">File</Label>
             <Input type="file" name="file" id="exampleFile" />
             <FormText color="muted">
-            Это какой-то блок-текст справки на уровне плейсхолдеров для вышеприведенного ввода.
-            Это немного легче и легко обертывается в новую линию.
+                This is some kind of block-text help at the playlist level for the above input.
+                It's a bit lighter and easily wrapped up in a new line.
             </FormText>
         </FormGroup>
         <FormGroup check>
             <Label check>
                 <Input type="radio" />
-                Вариант первый - это и то, и то, и другое - обязательно включите, почему это здорово.
+                Option one is both - make sure you turn on why it's great.
             </Label>
         </FormGroup>
         <FormGroup check>
             <Label check>
                 <Input type="checkbox" />
-                Проверьте меня
+                Check me out.
             </Label>
         </FormGroup>
     </Form>
@@ -156,11 +156,11 @@
 </Row>
 <Row>
     <div class="col-xl-12">
-        <h2 class="mt-4">Связывание: (Binding)</h2>
-        <h4 class="mt-4">Пример:</h4>
-        <p>Рекомендуемый способ привязки значений к входам - ​​через <code> bind: value = yourBind в фигурных скобках </code></p>
+        <h2 class="mt-4">Binding</h2>
+        <h4 class="mt-4">Example:</h4>
+        <p>The recommended way to bind values to inputs is through <code> bind: value = yourBind in curly brackets  </code></p>
         <FormGroup>
-            <Label>Начните печать тут</Label>
+            <Label>Start printing here</Label>
             <Input type="text" bind:value={inputValue} />
         </FormGroup>
         {#if inputValue}
@@ -170,13 +170,13 @@
 </Row>
 <Row>
     <div class="col-xl-12">
-        <h2 class="mt-4">Привязка событий (Event Binding)</h2>
-        <h4 class="mt-4">Пример:</h4>
-        <p>Вы также можете связать непосредственно с обработчиками событий: <code>on:blur on:focus on:keydown on:keyup on:change on:input</code>
-            но это не рекомендуется, если вы просто привязаны к простому значению - Svelte не реагирует. :-)
-            Если вам нужно больше экзотических событий, пожалуйста, следуйте номер <a href="https://github.com/bestguy/sveltestrap/issues/36">36.</a></p>
+        <h2 class="mt-4">Event Binding</h2>
+        <h4 class="mt-4">Example:</h4>
+        <p>You can also link directly with event handlers: <code>on:blur on:keydown on:keyup on:change on:input</code>.
+            but it's not recommended if you're just tied to a simple value - Svelte doesn't respond. :-)
+            If you need more exotic events, please follow the number <a href="https://github.com/bestguy/sveltestrap/issues/36">36.</a></p>
         <FormGroup>
-            <Label>Начните печать тут</Label>
+            <Label> Start typing here</Label>
             <Input
                     type="text"
                     value={inputValueEventBind}
@@ -186,15 +186,15 @@
                             on:input={e => (inputValueEventBind = e.target.value)} />
         </FormGroup>
         {#if changeValue}
-            <p><code>on:change</code> говорит, что ты набрал: {changeValue}</p>
+            <p><code>on:change</code> says you typed: {changeValue}</p>
         {/if}
         {#if inputValueEventBind}
-            <p><code>on:input</code> говорит, что ты печатаешь: {inputValueEventBind}</p>
+            <p><code>on:input</code> says you print: {inputValueEventBind}</p>
         {/if}
-        {#if !focused}
-            <p><code>on:blur</code> говорит, что ты не убрал фокус с поля ввода.</p>
+        {#if!focused}
+            <p><code>on:blur</code> says you didn't remove focus from the input field.
         {:else}
-            <p><code>on:focus</code> говорит, что ты навел фокус на поле ввода.</p>
+            <p><code>on:focus</code> says you put the focus on the input field.
         {/if}
     </div>
 </Row>
