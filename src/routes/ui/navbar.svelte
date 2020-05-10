@@ -27,27 +27,27 @@
         isOpen = event.detail.isOpen;
     }
     const toggler = () => (isOpen = !isOpen);
-    let title = "Навигационное меню | UI | Пользовательский Интерфейс";
+    let title = "Navigation menu | UI | User Interface";
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Навигационное меню</h1>
+<h1 class="mt-4">Navigation menu </h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Навигационное меню</BreadcrumbItem>
+    <BreadcrumbItem active>Navigation menu</BreadcrumbItem>
 </Breadcrumb>
 
 <Row>
     <div class="col-xl-12">
-        <h3 class="mt-4">Пример</h3>
+        <h3 class="mt-4">Example</h3>
         <Navbar color="dark">
             <NavbarBrand href="/" class="mr-auto">λproton </NavbarBrand>
             <NavbarToggler on:click={toggler} className="mr-2" />
             <Collapse {isOpen} navbar>
                 <Nav navbar>
                     <NavItem>
-                        <NavLink href="#components/">Компоненты</NavLink>
+                        <NavLink href="#components">Components</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink href="https://github.com/thinkjazz/lambda-proton">GitHub</NavLink>
@@ -59,25 +59,25 @@
 </Row>
 <Row>
     <div class="col-xl-12">
-        <h3 class="mt-4">Пример</h3>
+        <h3 class="mt-4">Example</h3>
         <Navbar color="light" light expand="md">
             <NavbarBrand href="/">λproton navigation</NavbarBrand>
             <NavbarToggler on:click={() => (isOpen = !isOpen)} />
             <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
                 <Nav class="ml-auto" navbar>
                     <NavItem>
-                        <NavLink href="#components/">Компоненты</NavLink>
+                        <NavLink href="#components">Components</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink href="https://github.com/thinkjazz/lambda-proton">GitHub</NavLink>
                     </NavItem>
                     <UncontrolledDropdown nav inNavbar>
-                        <DropdownToggle nav caret>Элемент</DropdownToggle>
+                        <DropdownToggle nav caret>Element</DropdownToggle>
                         <DropdownMenu right>
-                            <DropdownItem>Элемент 1</DropdownItem>
-                            <DropdownItem>Элемент 2</DropdownItem>
+                            <DropdownItem>Element 1</DropdownItem>
+                            <DropdownItem>Element 2</DropdownItem>
                             <DropdownItem divider />
-                            <DropdownItem>Сброс</DropdownItem>
+                            <DropdownItem>Reset</DropdownItem>
                         </DropdownMenu>
                     </UncontrolledDropdown>
                 </Nav>
@@ -87,12 +87,12 @@
 </Row>
 <Row>
     <div class="col-xl-12">
-        <h2 class="mt-4">Цветные схемы навигационного меню</h2>
+        <h2 class="mt-4">Color schemes of the navigation menu</h2>
         <p class="info">
-            Измените цвет фона Навбара с помощью цветной  <code>color</code> пропсы (свойство).
-            Используйте <code>light</code> or <code>dark</code> пропсы
-            чтобы изменить цвет текста на панели навигации для более светлых или темных <code>color</code> значений.
-            </p>
+            Change the background color of Navbar with the colored <code>color</code> of the props (property).
+            Use <code>light</code> or <code>dark</code>props.
+            to change the text color in the navigation bar for lighter or darker <code>color</code> values.
+        </p>
         {#each colors as color}
             <Navbar
                     color={color}
