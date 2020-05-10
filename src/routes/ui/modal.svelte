@@ -27,39 +27,39 @@
     };
 
 
-    let title = "Модальные окна | UI | Пользовательский Интерфейс";
+    let title = "Modals | UI";
 </script>
 
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Модальные окна</h1>
+<h1 class="mt-4">Modals</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Модальные окна</BreadcrumbItem>
+    <BreadcrumbItem active>Modals</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Модальные окна</h2>
+        <h2 class="mt-4">Modals</h2>
         <div>
             <p>
-        Используйся плагин JavaScript \ Svelte для добавления диалогов для лайтбоксов,
-        уведомлений пользователей или полностью пользовательского контента.
+                Use the JavaScript plugin \ Svelte to add dialogs for lightboxes,
+                user notifications or all user content.
             </p>
             <Button color="danger" on:click={toggle}>
-                Открыть модальное окно
+                Open modal window
             </Button>
 
             <Modal isOpen={open} {toggle}>
-                <ModalHeader {toggle}>Заголовок</ModalHeader>
+                <ModalHeader {toggle}>Title</ModalHeader>
                 <ModalBody>
-                    Вуууу, ты читаешь этот текст модальным способом!
+                    Whoo, you're reading this text in a modal way!
                 </ModalBody>
                 <ModalFooter>
                     <Button color="primary" on:click={toggle}>
-                        Ок
+                      Ok
                     </Button>
                     <Button color="secondary" on:click={toggle}>
-                        Отмена
+                        Cancel
                     </Button>
                 </ModalFooter>
             </Modal>
@@ -69,31 +69,31 @@
 
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Модальные окна: Размеры</h2>
+        <h2 class="mt-4">Modals: Sizes</h2>
         <div>
             <ButtonGroup>
                 <Button color="success" on:click={toggleSm}>
-                   Маленькое окно
+                   Small modal
                 </Button>
                 <Button color="warning" on:click={toggleSt}>
-                    Стандартное окно
+                    Standard modal
                 </Button>
                 <Button color="danger" on:click={toggleLg}>
-                    Большое окно
+                    Large modal
                 </Button>
             </ButtonGroup>
 
             <Modal isOpen={openSizeModal} {toggleSt} {size}>
-                <ModalHeader {toggleSt}>Заголовок</ModalHeader>
+                <ModalHeader {toggleSt}>Title</ModalHeader>
                 <ModalBody>
-                    Вуууу, ты читаешь этот текст модальным способом!
+                    Whoo, you're reading this text in a modal way!
                 </ModalBody>
                 <ModalFooter>
                     <Button color="primary" on:click={toggleSt}>
-                        Ок
+                        Ok
                     </Button>
                     <Button color="secondary" on:click={toggleSt}>
-                        Отмена
+                        Cancel
                     </Button>
                 </ModalFooter>
             </Modal>
