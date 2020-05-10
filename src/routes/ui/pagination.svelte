@@ -1,5 +1,5 @@
 <script>
-    let title = "Пагинация | UI | Пользовательский Интерфейс";
+    let title = "Pagination | UI";
     import  Breadcrumb  from "sveltestrap/src/Breadcrumb.svelte";
     import  BreadcrumbItem  from "sveltestrap/src/BreadcrumbItem.svelte";
     import  Row  from "sveltestrap/src/Row.svelte";
@@ -22,26 +22,26 @@
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Пагинация</h1>
+<h1 class="mt-4">Pagination</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Пагинация</BreadcrumbItem>
+    <BreadcrumbItem active>Pagination</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-12">
-        <h2 class="mt-4">Обзор</h2>
+        <h2 class="mt-4">Overview</h2>
     <div>
         <p>
-            Мы используем большой блок подключенных ссылок для нашей разбивки по страницам,
-            что делает ссылки трудно пропустить и легко масштабируемые - все это в то же время обеспечивает большие хитовые области.
-            Пагинация построена с элементами списка HTML, чтобы читатели экрана могли объявлять количество доступных ссылок. Используйте оберточный элемент, <code>nav</code>
-            чтобы идентифицировать его как раздел навигации для экранных читателей и других вспомогательных технологий. </p>
+            We use a large block of connected links to break down our pages,
+            which makes links difficult to skip and easily scalable - all this at the same time provides large hit areas.
+            Pagination is built with elements of the HTML list so that screen readers can declare the number of available links. Use a wrapper element, <code>nav</code>.
+            to identify it as a navigation section for screen readers and other support technologies. </p>
         <p>
-            Кроме того, поскольку страницы, вероятно, имеют более одного такого раздела навигации,
-            рекомендуется предоставить описательную арию-ярлык для, <code>nav</code> чтобы отразить его назначение.
-            Например, если компонент пагинации используется для навигации между набором результатов поиска,
-            соответствующей меткой может быть aria-label="страницы результатов поиска".
+            In addition, since pages probably have more than one such navigation section,
+            it is recommended to provide a descriptive aria-label for, <code>nav</code> to reflect its purpose.
+            For example, if a pagination component is used to navigate between a set of search results,
+            The corresponding label may be aria-label="search result pages".
         </p>
-        <h2 class="mt-4">Пример</h2>
+        <h2 class="mt-4">Example</h2>
         <Pagination ariaLabel="Page navigation example">
             <PaginationItem disabled>
                 <PaginationLink first href="#" />
@@ -77,9 +77,9 @@
 </Row>
 <Row>
     <div class="col-xl-12">
-        <h2 class="mt-4">Размеры элементов пагинации</h2>
+        <h2 class="mt-4">Sizes of pagination elements</h2>
         <div>
-            <h4>Большой</h4>
+            <h4>Large</h4>
             <Pagination size="lg" ariaLabel="Page navigation example">
                 <PaginationItem>
                     <PaginationLink first href="#" />
@@ -104,7 +104,7 @@
                 </PaginationItem>
             </Pagination>
 
-            <h4>Маленький</h4>
+            <h4>Small</h4>
             <Pagination size="sm" ariaLabel="Page navigation example">
                 <PaginationItem>
                     <PaginationLink first href="#" />
