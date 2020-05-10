@@ -21,13 +21,13 @@
 <svelte:head>
     <title>{title}</title>
 </svelte:head>
-<h1 class="mt-4">Загрузчики</h1>
+<h1 class="mt-4">Loader</h1>
 <Breadcrumb class="mb-4">
-    <BreadcrumbItem active>Загрузчики</BreadcrumbItem>
+    <BreadcrumbItem active>Loader</BreadcrumbItem>
 </Breadcrumb>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Цвета</h2>
+        <h2 class="mt-4">Colors</h2>
         {#each colors as color}
             <Spinner {color} />
         {/each}
@@ -35,7 +35,7 @@
 </Row>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Типы</h2>
+        <h2 class="mt-4">Types</h2>
 
         <div>
             {#each colors as color}
@@ -52,7 +52,7 @@
 </Row>
 <Row>
     <div class="col-xl-6">
-        <h2 class="mt-4">Размеры</h2>
+        <h2 class="mt-4">Size</h2>
 
         <Spinner size="sm" />
         <Spinner size="sm" type="grow" />
