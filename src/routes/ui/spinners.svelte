@@ -15,7 +15,7 @@
     ];
 
 
-    let title = "Загрузчики | UI | Пользовательский Интерфейс";
+    let title = "Loaders | UI";
 </script>
 
 <svelte:head>
